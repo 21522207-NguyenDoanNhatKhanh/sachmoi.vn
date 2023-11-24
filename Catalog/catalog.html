@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sachmoi.vn</title>
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="catalog.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -16,9 +16,9 @@
   </head>
   <body>
     <!-- header starts -->
-    <header class="header" id="top">
+    <header class="header">
       <div class="header1">
-        <img src="/HomePage/logo/logo.png" class="image" />
+        <img src="../HomePage/logo/logo.png" class="image" />
       </div>
       <!--  -->
       <div class="header2">
@@ -93,7 +93,7 @@
                 <a href="/AboutUs/aboutus.html">Nhà sáng lập</a>
               </li>
               <li>
-                <a href="#contact">Ưu đãi</a>
+                <a href="/Contact/contact.html">Ưu đãi</a>
               </li>
             </ul>
           </div>
@@ -107,7 +107,7 @@
           <div class="dropdown">
             <a href="#" class="account"><i class="fas fa-user"></i></a>
             <div class="dropdown-content">
-              <a href="/Login/login.html"">Đăng nhập</a>
+              <a href="/Login/login.html">Đăng nhập</a>
               <a href="/Register/register.html">Đăng ký</a>
             </div>
           </div>
@@ -118,72 +118,79 @@
       </div>
     </header>
     <!-- header ends -->
-    <!-- to-the-top button -->
-    <button class="to-the-top">
-      <a href="#top"
-        ><i class="fa-solid fa-arrow-up"></i
-      ></a>
-    </button>
     <!-- bottom navbar -->
     <nav class="bottom-navbar">
       <a href="/HomePage/homepage.html" class="fas fa-home"></a>
-      <a href="catalog" class="fas fa-list"></a>
+      <a href="#catalog" class="fas fa-list"></a>
       <a href="/Products/HotSales/hotsales.html" class="fas fa-fire"></a>
       <a href="/AboutUs/aboutus.html" class="fas fa-circle-info"></a>
-      <a href="#contact" class="fa-solid fa-ticket"></a>
+      <a href="/Contact/contact.html" class="fa-solid fa-ticket"></a>
     </nav>
     <!-- breadscrumb -->
     <ul class="breadcrumb">
-      <li><a href="../HomePage/homepage.html">Trang chủ</a></li>
-      <li>Ưu đãi</li>
+      <li><a href="/HomePage/homepage.html">Trang chủ</a></li>
+      <li>Danh mục</li>
     </ul>
-    <!-- contact form starts -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="offer">
-          <h2>Ưu đãi cực lớn!</h2>
-          <div>
-            <p>Nhận những thông báo khi có các đợt sales diễn ra</p>
-            <p>Miễn phí đổi trả sách</p>
-            <p>Voucher tự động mỗi tháng</p>
-            <p>Tích điểm đổi quà</p>
-            <p>Tri ân khách hàng mỗi dịp sinh nhật</p>
+    <!-- to-the-top button -->
+    <button class="to-the-top">
+      <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </button>
+    <!-- catalog starts -->
+    <section class="catalog" id="catalog">
+      <h3 class="heading"><span>Danh mục</span></h3>
+      <div class="site-wrapper">
+        <div class="container">
+          <div class="box">
+            <ul>
+              <li><a href=""><h2>Văn học Việt Nam</h2></a></li>
+              <li><a href="">Tiểu thuyết</a></li>
+              <li><a href="">Truyện ngắn</a></li>
+              <li><a href="">Thơ</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="wrapper">
-          <div class="contact-form">
-            <h2>Nhận ưu đãi</h2>
-            <form action="">
-              <div class="input-box">
-                <input type="text" require placeholder="Họ và tên" />
-                <i><ion-icon name="person-outline"></ion-icon></i>
-              </div>              
-              <div class="input-box">
-                <input type="tel" require pattern="[0-0]{1}-[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Số điện thoại" />
-                <i><ion-icon name="call-outline"></ion-icon></i>
-              </div>
-              <div class="input-box">
-                <input type="date" require placeholder="Sinh nhật" />
-              </div>
-              <div class="input-box">
-                <input type="text" require placeholder="Địa chỉ" />
-                <i><ion-icon name="location-outline"></ion-icon></i>
-              </div>
-              <div class="input-box">
-                <input type="email" require placeholder="Email" />
-                <i><ion-icon name="mail-outline"></ion-icon></i>
-              </div>
-              <div class="input-box">
-                <input type="email" require placeholder="Xác nhận email" />
-                <i><ion-icon name="checkmark-outline"></ion-icon></i>
-              </div>             
-              <button type="submit" class="btn">Gửi</button>              
-            </form>
+          <div class="box">
+            <ul>
+              <li><a href=""><h2>Văn học nước ngoài</h2></a></li>
+              <li><a href="">Đương đại</a></li>
+              <li><a href="">Lãng mạn</a></li>
+              <li><a href="">Trinh thám/ kinh dị</a></li>
+              <li><a href="">Light novel</a></li>
+              <li><a href="">Khoa học</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href=""><h2>Kinh tế</h2></a></li>
+              <li><a href="">Bài học kinh doanh</a></li>
+              <li><a href="">Phân tích kinh tế</a></li>
+              <li><a href="">Quản trị - lãnh đạo</a></li>
+              <li><a href="">Khởi nghiệp - bán hàng</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href=""><h2>Sách tham khảo</h2></a></li>
+              <li><a href="">Tiếng Anh</a></li>
+              <li><a href="">Tiếng Nhật</a></li>
+              <li><a href="">Tiếng Trung</a></li>
+              <li><a href="">Tiếng Pháp</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li><a href=""><h2>Sách thiếu nhi</h2></a></li>
+              <li><a href="">Sách ảnh</a></li>
+              <li><a href="">Sách nói</a></li>
+              <li><a href="">Sách tô màu</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <a href=""><h2>Sách giảm giá</h2></a>
           </div>
         </div>
       </div>
     </section>
-    <!-- contact form ends -->
+    <!-- catalog ends -->
     <!-- footer starts -->
     <section class="footer">
       <div class="media">
@@ -205,14 +212,16 @@
               id=""
               class="box"
             />
-            <a href="#contact"><input type="submit" value="Đăng ký" class="btn" /></a>
+            <a href="/Contact/contact.html"
+              ><input type="submit" value="Đăng ký" class="btn"
+            /></a>
           </div>
         </div>
       </div>
       <div class="site-wrapper">
         <div class="container">
           <div class="box">
-            <h3 class="fas fa-book"> Sachmoi.net</h3>
+            <h3 class="fas fa-book">Sachmoi.net</h3>
             <a href="#"
               ><i class="fa-solid fa-location-dot"></i> Khu phố 6, phường Linh
               Trung, thành phố Hồ Chí Minh</a
@@ -226,13 +235,19 @@
 
           <div class="box">
             <h3>Điều hướng</h3>
-            <a href="../HomePage/homepage.html"
+            <a href="/HomePage/homepage.html"
               ><i class="fas fa-arrow-right"></i>Trang chủ</a
             >
-            <a href="catalog"><i class="fas fa-arrow-right"></i>Danh mục</a>
-            <a href="../Products/HotSales/hotsales.html"><i class="fas fa-arrow-right"></i>Bán chạy</a>
-            <a href="/AboutUs/aboutus.html"><i class="fas fa-arrow-right"></i>Nhà sáng lập</a>
-            <a href="#contact"><i class="fas fa-arrow-right"></i>Ưu đãi</a>
+            <a href="#catalog"><i class="fas fa-arrow-right"></i>Danh mục</a>
+            <a href="/Products/HotSales/hotsales.html"
+              ><i class="fas fa-arrow-right"></i>Bán chạy</a
+            >
+            <a href="/AboutUs/aboutus.html"
+              ><i class="fas fa-arrow-right"></i>Nhà sáng lập</a
+            >
+            <a href="/Contact/contact.html"
+              ><i class="fas fa-arrow-right"></i>Ưu đãi</a
+            >
           </div>
 
           <div class="box">
@@ -263,6 +278,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <!-- scripts -->
-    <script src="contact.js"></script>
+    <script src="aboutus.js"></script>
   </body>
 </html>

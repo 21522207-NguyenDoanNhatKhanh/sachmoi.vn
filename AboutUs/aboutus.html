@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sachmoi.vn</title>
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="aboutus.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- header starts -->
-    <header class="header" id="top">
+    <header class="header">
       <div class="header1">
         <img src="/HomePage/logo/logo.png" class="image" />
       </div>
@@ -90,10 +90,10 @@
                 <a href="/Products/HotSales/hotsales.html">Sách bán chạy</a>
               </li>
               <li>
-                <a href="/AboutUs/aboutus.html">Nhà sáng lập</a>
+                <a href="#aboutus">Nhà sáng lập</a>
               </li>
               <li>
-                <a href="#contact">Ưu đãi</a>
+                <a href="/Contact/contact.html">Ưu đãi</a>
               </li>
             </ul>
           </div>
@@ -107,7 +107,7 @@
           <div class="dropdown">
             <a href="#" class="account"><i class="fas fa-user"></i></a>
             <div class="dropdown-content">
-              <a href="/Login/login.html"">Đăng nhập</a>
+              <a href="/Login/login.html">Đăng nhập</a>
               <a href="/Register/register.html">Đăng ký</a>
             </div>
           </div>
@@ -118,72 +118,57 @@
       </div>
     </header>
     <!-- header ends -->
-    <!-- to-the-top button -->
-    <button class="to-the-top">
-      <a href="#top"
-        ><i class="fa-solid fa-arrow-up"></i
-      ></a>
-    </button>
     <!-- bottom navbar -->
     <nav class="bottom-navbar">
       <a href="/HomePage/homepage.html" class="fas fa-home"></a>
       <a href="catalog" class="fas fa-list"></a>
       <a href="/Products/HotSales/hotsales.html" class="fas fa-fire"></a>
-      <a href="/AboutUs/aboutus.html" class="fas fa-circle-info"></a>
-      <a href="#contact" class="fa-solid fa-ticket"></a>
+      <a href="#aboutus" class="fas fa-circle-info"></a>
+      <a href="/Contact/contact.html" class="fa-solid fa-ticket"></a>
     </nav>
     <!-- breadscrumb -->
     <ul class="breadcrumb">
-      <li><a href="../HomePage/homepage.html">Trang chủ</a></li>
-      <li>Ưu đãi</li>
+      <li><a href="/HomePage/homepage.html">Trang chủ</a></li>
+      <li>Nhà sáng lập</li>
     </ul>
-    <!-- contact form starts -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="offer">
-          <h2>Ưu đãi cực lớn!</h2>
-          <div>
-            <p>Nhận những thông báo khi có các đợt sales diễn ra</p>
-            <p>Miễn phí đổi trả sách</p>
-            <p>Voucher tự động mỗi tháng</p>
-            <p>Tích điểm đổi quà</p>
-            <p>Tri ân khách hàng mỗi dịp sinh nhật</p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="contact-form">
-            <h2>Nhận ưu đãi</h2>
-            <form action="">
-              <div class="input-box">
-                <input type="text" require placeholder="Họ và tên" />
-                <i><ion-icon name="person-outline"></ion-icon></i>
-              </div>              
-              <div class="input-box">
-                <input type="tel" require pattern="[0-0]{1}-[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Số điện thoại" />
-                <i><ion-icon name="call-outline"></ion-icon></i>
-              </div>
-              <div class="input-box">
-                <input type="date" require placeholder="Sinh nhật" />
-              </div>
-              <div class="input-box">
-                <input type="text" require placeholder="Địa chỉ" />
-                <i><ion-icon name="location-outline"></ion-icon></i>
-              </div>
-              <div class="input-box">
-                <input type="email" require placeholder="Email" />
-                <i><ion-icon name="mail-outline"></ion-icon></i>
-              </div>
-              <div class="input-box">
-                <input type="email" require placeholder="Xác nhận email" />
-                <i><ion-icon name="checkmark-outline"></ion-icon></i>
-              </div>             
-              <button type="submit" class="btn">Gửi</button>              
-            </form>
-          </div>
+    <!-- to-the-top button -->
+    <button class="to-the-top">
+      <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </button>
+    <!-- about us starts -->
+    <section class="aboutus" id="aboutus">
+      <div class="site-wrapper">
+        <img src="/AboutUs/Image/aboutus.jpg" />
+        <div class="text">
+          <h2>
+            Về chúng tôi, nhà sách trực tuyến
+            <a href="/HomePage/homepage.html">Sách mới</a>
+          </h2>
+          <p>
+            Chào mừng đến với nhà sách trực tuyến <a href="/HomePage/homepage.html">sachmoi.vn</a>! Chúng tôi là một
+            nhóm sinh viên nhiệt huyết và đam mê về văn hóa sách. Với niềm đam
+            mê chung về việc chia sẻ tri thức và khám phá thế giới qua trang
+            sách, chúng tôi đã quyết định tạo ra một nền tảng trực tuyến để mang
+            đến cho mọi người những cuốn sách tuyệt vời. Với kho sách đa dạng và
+            phong phú, chúng tôi cam kết mang đến cho bạn những tác phẩm độc đáo
+            từ các thể loại khác nhau, bao gồm tiểu thuyết, kinh doanh, khoa
+            học, lịch sử và nhiều hơn nữa. Bạn sẽ tìm thấy những quyển sách phổ
+            biến của các tác giả nổi tiếng cũng như những tác phẩm mới và tiềm
+            năng từ các tác giả trẻ. Trang web của chúng tôi được thiết kế đơn
+            giản và dễ sử dụng. Bạn có thể dễ dàng tìm kiếm và duyệt qua các
+            danh mục sách, đọc các đánh giá từ cộng đồng và đặt hàng một cách
+            nhanh chóng và tiện lợi. Chúng tôi cam kết đem đến cho bạn trải
+            nghiệm mua sắm sách trực tuyến tuyệt vời, với dịch vụ chăm sóc khách
+            hàng tận tâm và giao hàng nhanh chóng. Hãy ghé thăm trang web của
+            chúng tôi ngay hôm nay và khám phá thế giới tri thức đang chờ đón
+            bạn. Chúng tôi tin rằng sách là nguồn cảm hứng vô tận và hy vọng
+            được chia sẻ niềm đam mê đó với bạn! Xin cảm ơn và chúc bạn có những
+            trải nghiệm đọc sách tuyệt vời!
+          </p>
         </div>
       </div>
     </section>
-    <!-- contact form ends -->
+    <!-- about us ends -->
     <!-- footer starts -->
     <section class="footer">
       <div class="media">
@@ -205,14 +190,16 @@
               id=""
               class="box"
             />
-            <a href="#contact"><input type="submit" value="Đăng ký" class="btn" /></a>
+            <a href="/Contact/contact.html"
+              ><input type="submit" value="Đăng ký" class="btn"
+            /></a>
           </div>
         </div>
       </div>
       <div class="site-wrapper">
         <div class="container">
           <div class="box">
-            <h3 class="fas fa-book"> Sachmoi.net</h3>
+            <h3 class="fas fa-book">Sachmoi.net</h3>
             <a href="#"
               ><i class="fa-solid fa-location-dot"></i> Khu phố 6, phường Linh
               Trung, thành phố Hồ Chí Minh</a
@@ -230,9 +217,15 @@
               ><i class="fas fa-arrow-right"></i>Trang chủ</a
             >
             <a href="catalog"><i class="fas fa-arrow-right"></i>Danh mục</a>
-            <a href="../Products/HotSales/hotsales.html"><i class="fas fa-arrow-right"></i>Bán chạy</a>
-            <a href="/AboutUs/aboutus.html"><i class="fas fa-arrow-right"></i>Nhà sáng lập</a>
-            <a href="#contact"><i class="fas fa-arrow-right"></i>Ưu đãi</a>
+            <a href="/Products/HotSales/hotsales.html"
+              ><i class="fas fa-arrow-right"></i>Bán chạy</a
+            >
+            <a href="#aboutus"
+              ><i class="fas fa-arrow-right"></i>Nhà sáng lập</a
+            >
+            <a href="/Contact/contact.html"
+              ><i class="fas fa-arrow-right"></i>Ưu đãi</a
+            >
           </div>
 
           <div class="box">
@@ -263,6 +256,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <!-- scripts -->
-    <script src="contact.js"></script>
+    <script src="aboutus.js"></script>
   </body>
 </html>
