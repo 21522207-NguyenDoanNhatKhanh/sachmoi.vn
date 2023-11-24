@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sachmoi.vn</title>
-    <link rel="stylesheet" href="catalog.css" />
+    <link rel="stylesheet" href="authors.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -18,12 +18,12 @@
     <!-- header starts -->
     <header class="header">
       <div class="header1">
-        <img src="../HomePage/logo/logo.png" class="image" />
+        <img src="/HomePage/logo/logo.png" class="image" />
       </div>
       <!--  -->
       <div class="header2">
         <div class="left">
-          <a href="../HomePage/homepage.html" class="logo"
+          <a href="/HomePage/homepage.html" class="logo"
             ><i class="fa-solid fa-book"></i> Sách mới
           </a>
         </div>
@@ -32,10 +32,10 @@
           <div class="navbar">
             <ul class="menu">
               <li>
-                <a href="../HomePage/homepage.html">Trang chủ</a>
+                <a href="/HomePage/homepage.html">Trang chủ</a>
               </li>
               <li>
-                <a href="">Danh mục &#x25BC;</a>
+                <a href="/Catalog/catalog.html">Danh mục &#x25BC;</a>
                 <ul class="submenu">
                   <li>
                     <a href="">Văn học Việt Nam</a>
@@ -87,13 +87,13 @@
                 </ul>
               </li>
               <li>
-                <a href="../Products/HotSales/hotsales.html">Sách bán chạy</a>
+                <a href="/Products/HotSales/hotsales.html">Sách bán chạy</a>
               </li>
               <li>
-                <a href="../AboutUs/aboutus.html">Nhà sáng lập</a>
+                <a href="/AboutUs/aboutus.html">Nhà sáng lập</a>
               </li>
               <li>
-                <a href="../Contact/contact.html">Ưu đãi</a>
+                <a href="/Contact/contact.html">Ưu đãi</a>
               </li>
             </ul>
           </div>
@@ -107,11 +107,11 @@
           <div class="dropdown">
             <a href="#" class="account"><i class="fas fa-user"></i></a>
             <div class="dropdown-content">
-              <a href="../Login/login.html">Đăng nhập</a>
-              <a href="../Register/register.html">Đăng ký</a>
+              <a href="/Login/login.html">Đăng nhập</a>
+              <a href="/Register/register.html">Đăng ký</a>
             </div>
           </div>
-          <a href="../Cart/cart.html" class="account"
+          <a href="#cart" class="account"
             ><i class="fas fa-shopping-cart"></i
           ></a>
         </div>
@@ -120,77 +120,46 @@
     <!-- header ends -->
     <!-- bottom navbar -->
     <nav class="bottom-navbar">
-      <a href="../HomePage/homepage.html" class="fas fa-home"></a>
-      <a href="#catalog" class="fas fa-list"></a>
-      <a href="../Products/HotSales/hotsales.html" class="fas fa-fire"></a>
-      <a href="../AboutUs/aboutus.html" class="fas fa-circle-info"></a>
-      <a href="../Contact/contact.html" class="fa-solid fa-ticket"></a>
+      <a href="/HomePage/homepage.html" class="fas fa-home"></a>
+      <a href="/Catalog/catalog.html" class="fas fa-list"></a>
+      <a href="/Products/HotSales/hotsales.html" class="fas fa-fire"></a>
+      <a href="/AboutUs/aboutus.html" class="fas fa-circle-info"></a>
+      <a href="/Contact/contact.html" class="fa-solid fa-ticket"></a>
     </nav>
     <!-- breadscrumb -->
     <ul class="breadcrumb">
-      <li><a href="../HomePage/homepage.html">Trang chủ</a></li>
-      <li>Danh mục</li>
+      <li><a href="/HomePage/homepage.html">Trang chủ</a></li>
+      <li>Nguyễn Huy Thiệp</li>
     </ul>
     <!-- to-the-top button -->
     <button class="to-the-top">
       <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
     </button>
-    <!-- catalog starts -->
-    <section class="catalog" id="catalog">
-      <h3 class="heading"><span>Danh mục</span></h3>
+    <!-- authors starts -->
+    <section class="authors">
       <div class="site-wrapper">
-        <div class="container">
-          <div class="box">
-            <ul>
-              <li><a href=""><h2>Văn học Việt Nam</h2></a></li>
-              <li><a href="">Tiểu thuyết</a></li>
-              <li><a href="">Truyện ngắn</a></li>
-              <li><a href="">Thơ</a></li>
-            </ul>
-          </div>
-          <div class="box">
-            <ul>
-              <li><a href=""><h2>Văn học nước ngoài</h2></a></li>
-              <li><a href="">Đương đại</a></li>
-              <li><a href="">Lãng mạn</a></li>
-              <li><a href="">Trinh thám/ kinh dị</a></li>
-              <li><a href="">Light novel</a></li>
-              <li><a href="">Khoa học</a></li>
-            </ul>
-          </div>
-          <div class="box">
-            <ul>
-              <li><a href=""><h2>Kinh tế</h2></a></li>
-              <li><a href="">Bài học kinh doanh</a></li>
-              <li><a href="">Phân tích kinh tế</a></li>
-              <li><a href="">Quản trị - lãnh đạo</a></li>
-              <li><a href="">Khởi nghiệp - bán hàng</a></li>
-            </ul>
-          </div>
-          <div class="box">
-            <ul>
-              <li><a href=""><h2>Sách tham khảo</h2></a></li>
-              <li><a href="">Tiếng Anh</a></li>
-              <li><a href="">Tiếng Nhật</a></li>
-              <li><a href="">Tiếng Trung</a></li>
-              <li><a href="">Tiếng Pháp</a></li>
-            </ul>
-          </div>
-          <div class="box">
-            <ul>
-              <li><a href=""><h2>Sách thiếu nhi</h2></a></li>
-              <li><a href="">Sách ảnh</a></li>
-              <li><a href="">Sách nói</a></li>
-              <li><a href="">Sách tô màu</a></li>
-            </ul>
-          </div>
-          <div class="box">
-            <a href=""><h2>Sách giảm giá</h2></a>
-          </div>
+        <img src="../nht.webp" />
+        <div class="text">
+          <h2>Nguyễn Huy Thiệp</h2>
+          <p>
+            Nguyễn Huy Thiệp sinh năm 1950 ở Thái Nguyên, quê gốc ở Hà Nội. Thuở
+            nhỏ, ông cùng gia đình di tản qua nhiều vùng quê ở Thái Nguyên, Phú
+            Thọ, Vĩnh Phúc. Ông tốt nghiệp khoa Lịch sử, Đại học Sư phạm Hà Nội.
+            Ông xuất hiện trên văn đàn Việt Nam từ năm 1986, với một số truyện
+            ngắn đăng trên Báo Văn nghệ đề tài nông thôn. Ngoài truyện ngắn, ông
+            viết 10 vở kịch, bốn tiểu thuyết cùng nhiều tiểu luận, phê bình văn
+            học gây chú ý, được xem là "hiện tượng hiếm" của văn đàn trong nước.
+            Ông từng nhận huân chương Văn học Nghệ thuật Pháp (2007), giải
+            thưởng Premio Nonino (Italy, 2008). Một số tác phẩm nổi bật của ông
+            gồm truyện ngắn Tướng về hưu, chuyển thể thành phim điện ảnh cùng
+            tên năm 1988, Những ngọn gió Hua Tát (tập truyện ngắn và kịch,
+            1989), Tiểu Long Nữ (tiểu thuyết, 1996), Tuổi 20 yêu dấu (tiểu
+            thuyết, xuất bản ở Pháp năm 2002)...
+          </p>
         </div>
       </div>
     </section>
-    <!-- catalog ends -->
+    <!-- authors ends -->
     <!-- footer starts -->
     <section class="footer">
       <div class="media">
@@ -212,7 +181,7 @@
               id=""
               class="box"
             />
-            <a href="../Contact/contact.html"
+            <a href="/Contact/contact.html"
               ><input type="submit" value="Đăng ký" class="btn"
             /></a>
           </div>
@@ -235,17 +204,19 @@
 
           <div class="box">
             <h3>Điều hướng</h3>
-            <a href="../HomePage/homepage.html"
+            <a href="/HomePage/homepage.html"
               ><i class="fas fa-arrow-right"></i>Trang chủ</a
             >
-            <a href="#catalog"><i class="fas fa-arrow-right"></i>Danh mục</a>
-            <a href="../Products/HotSales/hotsales.html"
+            <a href="/Catalog/catalog.html"
+              ><i class="fas fa-arrow-right"></i>Danh mục</a
+            >
+            <a href="/Products/HotSales/hotsales.html"
               ><i class="fas fa-arrow-right"></i>Bán chạy</a
             >
-            <a href="../AboutUs/aboutus.html"
+            <a href="/AboutUs/aboutus.html"
               ><i class="fas fa-arrow-right"></i>Nhà sáng lập</a
             >
-            <a href="../Contact/contact.html"
+            <a href="/Contact/contact.html"
               ><i class="fas fa-arrow-right"></i>Ưu đãi</a
             >
           </div>
@@ -253,10 +224,10 @@
           <div class="box">
             <h3>Phương thức thanh toán</h3>
             <img
-              src="../HomePage/footer/payment_method.webp"
+              src="/HomePage/footer/payment_method.webp"
               alt="Phương thức thanh toán"
             />
-            <a href="../Cart/cart.html"
+            <a href="/Cart/cart.html"
               ><i class="fas fa-arrow-right"></i>Giỏ hàng của bạn</a
             >
           </div>
@@ -278,6 +249,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <!-- scripts -->
-    <script src="aboutus.js"></script>
+    <script src="authors.js"></script>
   </body>
 </html>

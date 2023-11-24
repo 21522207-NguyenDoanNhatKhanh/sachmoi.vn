@@ -288,6 +288,14 @@ section {
     color: var(--blue);
 }
 
+.header .header2.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
 .bottom-navbar{
     text-align: center;
     background: #fff;
@@ -308,6 +316,33 @@ section {
 .bottom-navbar a:hover{
     color: #fff;
     background: var(--darkblue);
+}
+
+.to-the-top {
+    position: fixed;
+    display: block;
+    right: 7rem;
+    bottom: 7rem;
+    background-color: transparent;
+    border: 0.2rem solid var(--darkblue);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: none;
+}
+
+.to-the-top.active {
+    display: block;
+}
+
+.to-the-top a i{
+    color: var(--darkblue);
+    font-size: 2.5rem;
+    padding: 1.5rem;
+}
+
+.to-the-top a:hover i{
+    color: #fff;
+    background-color: var(--darkblue);
 }
 
 ul.breadcrumb {
@@ -338,53 +373,23 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
-.forget-pass .wrapper {
-    width: 40rem;
-    color: var(--darkblue);
-    padding: 2rem;
-    margin: auto;
-    height: 21rem;
-    border: .2rem solid var(--darkblue);
-    border-radius: 4rem;
-    box-shadow: var(--box-shadow);
-}
-
-.forget-pass .wrapper .form .input-box {
-    position: relative;
-    width: 100%;
-    height: 4rem;
-    margin: 1.5rem 0;
-}
-
-.forget-pass .wrapper .form .input-box input {
-    width: 95%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
+.cart .box {
     border: var(--border);
-    border-radius: 4rem;
-    font-size: 1.5rem;
-    color: var(--darkblue);
-    padding: 0 2rem;
+    display: block;
+    text-align: center;
+    padding: 20rem 0;
 }
 
-.forget-pass .wrapper .form .input-box input::placeholder {
+.cart .box i {
+    font-size: 10rem;
+    margin-bottom: 2rem;
+}
+
+.cart .box a {
+    font-size: 2rem;
     color: var(--black);
 }
 
-.forget-pass .wrapper .form .input-box i{
-    position: absolute;
-    right: -1rem;    
-    transform: translateY(40%);
-    font-size: 2rem;
-}
-
-.forget-pass .wrapper .direction {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 /*  */
 
 .footer {
