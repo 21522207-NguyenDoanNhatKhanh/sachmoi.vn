@@ -547,6 +547,10 @@ ul.breadcrumb li a:hover {
     section {
         padding: 1rem;
     }
+
+    .header .header2 .left .logo {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 616px) {

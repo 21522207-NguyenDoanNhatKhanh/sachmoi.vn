@@ -617,6 +617,10 @@ ul.breadcrumb li a:hover {
     .footer .media .newsletter input{
         height: 4rem;
     }
+
+    .header .header2 .left .logo {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 660px) {
