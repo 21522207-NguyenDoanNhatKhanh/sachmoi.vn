@@ -103,3 +103,25 @@ var swiper = new Swiper(".cooperators-slider", {
     },
     grabCursor: true,
 });
+
+const addToCartIcons = document.querySelectorAll(".fas.fa-shopping-cart");
+
+  addToCartIcons.forEach(icon => {
+    icon.addEventListener("click", function(event) {
+      const product = event.target.closest(".box");
+      const productImg = product.querySelector("img").src;
+      const productName = product.querySelector("h3").innerText;
+      const productPrice = product.querySelector(".price").innerText;
+      // Lưu thông tin sản phẩm vào localStorage
+      const cartItem = {
+        img: productImg,
+        name: productName,
+        price: productPrice
+      };
+      // Lấy giỏ hàng từ localStorage
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push(cartItem);
+      // Lưu giỏ hàng vào localStorage
+      localStorage.setItem("cart", JSON.stringify(cart));
+    });
+  });
