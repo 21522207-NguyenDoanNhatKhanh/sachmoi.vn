@@ -1,0 +1,40 @@
+{
+    "account": [
+      {
+        "username": "haha",
+        "email": "haha@gmail.com",
+        "password": "haha",
+        "id": 1
+      },
+      {
+        "username": "huhu",
+        "email": "huhu@gmail.com",
+        "password": "huhu",
+        "id": 2
+      },
+      {
+        "username": "hihi",
+        "email": "hihi@gmail.com",
+        "password": "hihi",
+        "id": 3
+      },
+      {
+        "username": "ahihi",
+        "email": "ahihi@gmail.com",
+        "password": "ahihi",
+        "id": 4
+      },
+      {
+        "username": "okla",
+        "email": "okla@gmail.com",
+        "password": "okla",
+        "id": 5
+      },
+      {
+        "username": "test",
+        "email": "test@gmail.com",
+        "password": "test",
+        "id": 6
+      }
+    ]
+  }
