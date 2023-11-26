@@ -548,6 +548,7 @@ section {
     color: var(--black);
     font-size: 2rem;
     padding: 1.5rem;
+    cursor: pointer;
 }
 
 .new-books .new-slider .box .icons a:hover {

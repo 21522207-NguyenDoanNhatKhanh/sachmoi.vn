@@ -77,18 +77,20 @@ section {
     border: var(--border);
 }
 
-.btn {
+.btn, .quantity {
     display: inline-block;
-    padding: 1.5rem 3rem;
+    padding: 1.1rem 3rem;
     border-radius: .5rem;
-    color: #fff;
-    background: var(--blue);
-    font-size: 1.5rem;
+    color: var(--darkblue);
+    border: 0.2rem solid var(--darkblue);
+    background: #fff;
+    font-size: 1.7rem;
     cursor: pointer;
     font-weight: bold;
 }
 
-.btn:hover{
+.btn:hover, .quantity:hover{
+    color: #fff;
     background: var(--darkblue);
 }
 
@@ -377,7 +379,8 @@ ul.breadcrumb li a:hover {
     border: var(--border);
     display: block;
     text-align: center;
-    padding: 20rem 0;
+    align-items: center;
+    padding: 2rem;
 }
 
 .cart .box i {

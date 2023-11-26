@@ -32,7 +32,10 @@ if (cartItems.length === 0) {
   const emptyCartRow = document.createElement("tr");
   const emptyCartCell = document.createElement("td");
   emptyCartCell.setAttribute("colspan", "4");
-  emptyCartCell.textContent = "Không có sản phẩm nào trong giỏ hàng";
+  emptyCartCell.textContent = "Không có sản phẩm nào trong giỏ hàng của bạn";
+  emptyCartCell.style.fontSize = "2.5rem";
+  emptyCartCell.style.fontWeight = "bold";
+  emptyCartCell.style.color = "var(--blue)";
   emptyCartRow.appendChild(emptyCartCell);
   cartTable.appendChild(emptyCartRow);
 } else {
@@ -42,7 +45,7 @@ if (cartItems.length === 0) {
       const productCell = document.createElement("td");
       const productImage = document.createElement("img");
       productImage.src = item.img;
-      productImage.style.width = "50px";
+      productImage.style.maxWidth = "20rem";
       productImage.alt = "";
       const productName = document.createTextNode(item.name);
       productCell.appendChild(productImage);
@@ -53,13 +56,21 @@ if (cartItems.length === 0) {
       const price = document.createElement("span");
       price.className = "price";
       price.textContent = item.price;
+      price.style.fontSize = "3rem";
+      price.style.fontWeight = "bold";
+      price.style.padding = "0 6rem";
       priceCell.appendChild(price);
       row.appendChild(priceCell);
 
       const quantityCell = document.createElement("td");
       const quantityInput = document.createElement("input");
-      quantityInput.style.width = "25px";
+      quantityInput.style.maxWidth = "7rem";
+      quantityInput.style.fontSize = "3rem";
+      quantityInput.style.fontWeight = "bold";
+      quantityInput.style.color = "var(--blue)";
       quantityInput.style.outline = "none";
+      quantityInput.style.border = "var(--border)";
+      quantityInput.style.paddingLeft = "1.1rem";
       quantityInput.type = "number";
       quantityInput.value = "1";
       quantityInput.min = "1";
@@ -69,6 +80,7 @@ if (cartItems.length === 0) {
       const deleteCell = document.createElement("td");
       const deleteButton = document.createElement("button");
       deleteButton.className = "btn";
+      deleteButton.style.marginLeft = "1.7rem";
       deleteButton.textContent = "Xóa";
       deleteButton.style.cursor = "pointer";
 
