@@ -380,8 +380,8 @@ ul.breadcrumb li a:hover {
 }
 
 .catalog .container .box {
-    width: 20rem;
-    margin: 3rem;
+    width: 24rem;
+    margin: 1rem;
     border-right: 0.2rem solid var(--darkblue);    
     font-weight: bold;
 }
