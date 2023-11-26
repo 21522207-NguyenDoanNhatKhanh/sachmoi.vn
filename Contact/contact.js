@@ -1,7 +1,7 @@
 header2 = document.querySelector('.header .header2')
 topbtn = document.querySelector('.to-the-top')
 window.onscroll = () =>{
-    if(window.scrollY > 80){
+    if(window.scrollY > 40){
         header2.classList.add('active');
         topbtn.classList.add('active');
     }else{
@@ -11,7 +11,7 @@ window.onscroll = () =>{
 }
 
 window.onload = () =>{
-    if(window.scrollY > 80){
+    if(window.scrollY > 40){
         header2.classList.add('active');
         topbtn.classList.add('active');
     }else{
