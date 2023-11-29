@@ -455,6 +455,19 @@ ul.breadcrumb li a:hover {
     color: var(--black);
     text-decoration: line-through;
 }
+
+
+.listpage {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    text-align: center;
+  
+}
+.listpage p {
+    line-height: 5rem;
+}
+
 /*  */
 
 .footer {
@@ -548,6 +561,8 @@ ul.breadcrumb li a:hover {
     color: var(--blue);
     font-weight: bold;
 }
+
+
 
 /* media queries */
 @media (min-width: 1385px) {
@@ -652,3 +667,5 @@ ul.breadcrumb li a:hover {
         padding: 0.5rem 1rem;
     }
 }
+
+

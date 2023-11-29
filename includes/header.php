@@ -1,4 +1,3 @@
-
 <!-- header starts -->
 <header class="header">
   <div class="header1">
@@ -64,22 +63,34 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="">Giảm giá</a>
+                  <a href="new_books.php">Sách mới</a>
                 </li>
               </ul>
             </li>
             <li>
                 <a href="bestselling.php">Sách bán chạy</a>
+            </li>		
+            <li>
+                <a href="aboutus.php">Nhà sáng lập</a>
+            </li>			
+            <li>
+                <a href="contact.php">Ưu đãi</a>
             </li>
-            <li>
-                <a href="new_books.php">Sách mới</a>
-            </li>			
-            <li>
-                <a href="aboutus">Nhà sáng lập</a>
-            </li>			
           </ul>
         </div>
       </div>
+    <!-- bottom navbar -->
+    <nav class="bottom-navbar">
+        <a href="index.php" class="fas fa-home"></a>
+        <a href="catalog.php" class="fas fa-list"></a>
+        <a href="bestselling.php" class="fas fa-fire"></a>
+        <a href="aboutus.php" class="fas fa-circle-info"></a>
+        <a href="contact.php" class="fa-solid fa-ticket"></a>
+    </nav>
+    <!-- to-the-top button -->
+    <button class="to-the-top">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </button>
     <!--  -->
       <div class="right">
         <form action="search.php" class="search-form">

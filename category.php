@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sachmoi.vn</title>
-    <link rel="stylesheet" href="./style/hotsales.css">
+    <link rel="stylesheet" href="./style/bestselling.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
@@ -31,7 +31,7 @@
 
     for ($i = 1; $i <= $totalPage; $i++) {
         if ($i == $page) {
-            $listPage .= " <span>" . $i . "</span> ";
+            $listPage .= " <span style='background-color:var(--blue); font-size:2rem; color:white'>" . $i . "</span> ";
         } else {
             $listPage .= ' <a style="font-size:2rem" href="' . $_SERVER['PHP_SELF'] . '?id=' . $category_id . '&page=' . $i . '' . '' . '">' . $i . '</a> ';
         }
@@ -39,19 +39,6 @@
     ?>
 
 
-
-    <!-- bottom navbar -->
-    <nav class="bottom-navbar">
-        <a href="/HomePage/homepage.html" class="fas fa-home"></a>
-        <a href="/Catalog/catalog.html" class="fas fa-list"></a>
-        <a href="#hotsales" class="fas fa-fire"></a>
-        <a href="/AboutUs/aboutus.html" class="fas fa-circle-info"></a>
-        <a href="/Contact/contact.html" class="fa-solid fa-ticket"></a>
-    </nav>
-    <!-- to-the-top button -->
-    <button class="to-the-top">
-        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
-    </button>
     <!-- breadscrumb -->
     <ul class="breadcrumb">
         <li><a href="/HomePage/homepage.html">Trang chủ</a></li>
@@ -105,10 +92,7 @@
                                 </div>
                             </div>
                         </div>
-
                     <?php endforeach; ?>
-
-
                     <!--  -->
                 </div>
                 <!--  -->
@@ -116,29 +100,26 @@
         </div>
     </section>
     <!-- products - hotsales ends -->
+    <div class="listpage">
+        
 
-
-
-
-
-
-    <p>
-        <?php echo $listPage; ?>
-    </p>
-
-    <a href="<?php echo $page > 1 ? $_SERVER['PHP_SELF'] . '?id=' . $category_id . '&page=' . ($page - 1) : 'javascript:void(0)'; ?>"
-        <?php echo $page == $totalPage ? 'role="link" aria-disabled="true"' : ''; ?>>
-        <button type="button" class="btn" <?php echo $page == 1 ? 'disabled' : ''; ?>>
-            « Trước
-        </button>
-    </a><a
-        href="<?php echo $page < $totalPage ? $_SERVER['PHP_SELF'] . '?id=' . $category_id . '&page=' . ($page + 1) : 'javascript:void(0)'; ?>"
-        <?php echo $page == $totalPage ? 'role="link" aria-disabled="true"' : ''; ?>>
-        <button type="button" class="ml-3 btn" <?php echo $page == $totalPage ? 'disabled' : ''; ?>>
-            Sau »
-        </button>
-    </a>
-
+        <a href="<?php echo $page > 1 ? $_SERVER['PHP_SELF'] . '?id=' . $category_id . '&page=' . ($page - 1) : 'javascript:void(0)'; ?>"
+            <?php echo $page == $totalPage ? 'role="link" aria-disabled="true"' : ''; ?>>
+            <button type="button" class="btn" <?php echo $page == 1 ? 'disabled' : ''; ?>>
+                « Trước
+            </button>
+        </a>
+        <p>
+            <?php echo $listPage; ?>
+        </p>
+        <a
+            href="<?php echo $page < $totalPage ? $_SERVER['PHP_SELF'] . '?id=' . $category_id . '&page=' . ($page + 1) : 'javascript:void(0)'; ?>"
+            <?php echo $page == $totalPage ? 'role="link" aria-disabled="true"' : ''; ?>>
+            <button type="button" class="ml-3 btn" <?php echo $page == $totalPage ? 'disabled' : ''; ?>>
+                Sau »
+            </button>
+        </a>
+    </div>
 
 
 
@@ -150,7 +131,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- scripts -->
-    <script src="hotsales.js"></script>
+    <script src="js/homepage.js"></script>
 </body>
 
 </html>

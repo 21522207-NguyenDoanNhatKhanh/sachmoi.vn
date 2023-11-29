@@ -21,25 +21,12 @@ include 'includes/db.php';
   <body></body>
 
 <?php include 'includes/header.php'; ?>
-
- <!-- bottom navbar -->
- <nav class="bottom-navbar">
-      <a href="/HomePage/homepage.html" class="fas fa-home"></a>
-      <a href="/Catalog/catalog.html" class="fas fa-list"></a>
-      <a href="/Products/HotSales/hotsales.html" class="fas fa-fire"></a>
-      <a href="/AboutUs/aboutus.html" class="fas fa-circle-info"></a>
-      <a href="/Contact/contact.html" class="fa-solid fa-ticket"></a>
-    </nav>
+ 
     <!-- breadscrumb -->
     <ul class="breadcrumb">
       <li><a href="/HomePage/homepage.html">Trang chủ</a></li>
       <li>Annet Schapp</li>
     </ul>
-    <!-- to-the-top button -->
-    <button class="to-the-top">
-      <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
-    </button>
-
 
 <?php
 if (isset($_GET['id'])) {
