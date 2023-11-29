@@ -454,7 +454,7 @@ section {
 .service-container .service .content h3{
     font-size: 2.2rem;
     color: var(--black);
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.5rem;swiper-button-next
 }
 
 .service-container .service .content p {
@@ -464,7 +464,16 @@ section {
 }
 
 /*  */
-
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
+    box-sizing: content-box;
+}
 
 
 .authors .authors-slider .swiper-slide,
@@ -473,6 +482,7 @@ section {
     position: relative;
     overflow: hidden;
     text-align: center;
+    height: 30rem;
 }
 
 .authors .authors-slider .swiper-slide .image,

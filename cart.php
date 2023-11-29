@@ -7,6 +7,7 @@ include 'includes/db.php';
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,6 +16,7 @@ include 'includes/db.php';
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
+
 <body></body>
 
 
@@ -47,43 +49,47 @@ include 'includes/db.php';
           <?php
           if (!empty($_SESSION['cart'])) {
             echo '<table>';
-            echo '<tr><th>Sản phẩm</th><th>Số lượng</th><th>Giá</th><th>Thành tiền</th></tr>';
+            echo '<tr>
+            <th class="style">Sản phẩm</th>
+            <th class="style">Tên</th>
+            <th class="style">Số lượng</th>
+            <th class="style">Giá</th>
+            <th class="style">Thành tiền</th>
+            </tr>';
 
             foreach ($_SESSION['cart'] as $product_id => $quantity) {
               $product = get_book_details($product_id);
               if ($product) {
                 echo '<tr>';
-                echo '<td>' . $product['name'] . '</td>';
-                echo '<td>
+                echo '<td class="style"> <img class="image" src="book_image/' . $product['image'] . ' "></td>';
+                echo '<td class="style">' . $product['name'] . '</td>';
+                echo '<td class="style">
                          <form class="update-form" data-product-id="' . $product_id . '">
                              <input type="hidden" name="product_id" value="' . $product_id . '">
-                             <input class="quantity-input" type="number" name="quantity" value="' . $quantity . '" min="1" oninput="updateCart(this)">
+                             <input type="number" name="quantity" value="' . $quantity . '" min="1" oninput="updateCart(this)">
                          </form>
                       </td>';
-                echo '<td id="product-price">' . number_format($product['price'], 0, ',', '.'). '&#x20AB;</td>';
-                echo '<td id="total-price">' . number_format($quantity * $product['price'], 0, ',', '.')   . '&#x20AB;</td>';
-                echo '<td>
+                echo '<td class="style" id="product-price">' . number_format($product['price'], 0, ',', '.') . '&#x20AB;</td>';
+                echo '<td class="style" id="total-price">' . number_format($quantity * $product['price'], 0, ',', '.') . '&#x20AB;</td>';
+                echo '<td class="style">
                          <form class="remove-form" data-product-id="' . $product_id . '">
                              <input type="hidden" name="product_id" value="' . $product_id . '">
-                             <button type="button" class="remove-btn" onclick="removeFromCart(this)">Xoá</button>
+                             <button type="button" class="btn" onclick="removeFromCart(this)">Xoá</button>
                          </form>
                       </td>';
                 echo '</tr>';
               }
             }
 
-            echo '
-    <form action="checkout.php" method="post">
-        <input type="submit" name="checkout" value="Mua hàng">
-    </form>
-    ';
-
             echo '</table>';
-            
+            echo '
+          <form action="checkout.php" method="post">
+              <input class="btn" type="submit" name="checkout" value="Mua hàng">
+          </form>
+          ';
           } else {
-            echo '<p style="font-size:2rem; padding:10px">Giỏ hàng của bạn đang trống.</p>';
-          }
-
+            echo '<p style="font-size:2.2rem; padding:10px; font-weight:bold; color:var(--darkblue);"><i class="fa-solid fa-cart-shopping"></i>  Giỏ hàng của bạn đang trống.</p>';
+          }          
           ?>
         </tbody>
       </table>
@@ -101,4 +107,5 @@ include 'includes/db.php';
 <script src="cart.js"></script>
 </body>
 <script src="js/update_cart.js"></script>
+
 </html>

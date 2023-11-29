@@ -1,79 +1,71 @@
-<h2>Thông tin đặt hàng</h2>
-<form action="process_order.php" method="post">
+<?php
+include 'includes/header.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sachmoi.vn</title>
+<link rel="stylesheet" href="style/checkout.css">
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+/>
+</head>
+<body>
 
-    <label for="name">Họ và tên:</label>
-    <input type="text" name="name" required>
-
-    <label for="number">Số điện thoại:</label>
-    <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')" name="number" required>
-
-    <label for="address">Địa chỉ:</label>
-    <input type="text" name="address" required>
-
-    <!-- <div>
-        <label for="shipping-country"> Tỉnh thành </label>
-        <div>
-            <select required id="shipping-city" name="shipping-city" autocomplete="country-name" onchange="document.querySelector('#shipping-city-text').val(document.querySelector(this).find('option:selected').text())">
-                <option value="">Chọn tỉnh thành</option>
-            </select>
+<section class="checkform">
+  <div class="site-wrapper">
+    <div class="container">
+      <h2>Thông tin đặt hàng</h2>
+      <form action="process_order.php" method="post">
+        <div class="input-box">
+          <label for="">Họ và tên: </label>
+          <input type="text" id="username" name="name" required>
         </div>
-    </div>
-    <input type="hidden" name="shipping-city-text" id="shipping-city-text" value="" />
-    <div>
-        <label for="shipping-country"> Quận huyện </label>
-        <div class="mt-1">
-            <select required id="shipping-district" name="shipping-district" autocomplete="country-name" onchange="document.querySelector('#shipping-district-text').val(document.querySelector(this).find('option:selected').text())">
-                <option value="">Chọn quận huyện</option>
-            </select>
+        <div class="input-box">
+          <label for="">Số điện thoại: </label>
+          <input type="tel" oninput="this.value = this.value.replace(/[^0-9]/g, '')" name="number" required>
         </div>
-    </div>
-
-    <input type="hidden" name="shipping-district-text" id="shipping-district-text" value="" />
-    <div>
-        <label for="shipping-country"> Phường xã </label>
-        <div class="mt-1">
-            <select required id="shipping-ward" name="shipping-ward" autocomplete="country-name" onchange="document.querySelector('#shipping-ward-text').val(document.querySelector(this).find('option:selected').text())">
-                <option value="">Chọn phường xã</option>
-            </select>
+        <div class="input-box">
+          <label for="shipping-city">Tỉnh thành: </label>
+          <select required id="shipping-city" name="shipping-city" autocomplete="country-name" onchange="updateHiddenText('shipping-city', 'shipping-city-text')">
+            <option value="">Chọn tỉnh thành</option>
+          </select>
+          <ion-icon name="navigate-outline"></ion-icon>
         </div>
+        <div class="input-box">
+          <label for="shipping-district">Quận huyện: </label>
+          <select required id="shipping-district" name="shipping-district" autocomplete="country-name" onchange="updateHiddenText('shipping-district', 'shipping-district-text')">
+            <option value="">Chọn quận huyện</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <label for="shipping-ward">Phường xã: </label>
+          <select required id="shipping-ward" name="shipping-ward" autocomplete="country-name" onchange="updateHiddenText('shipping-ward', 'shipping-ward-text')">
+            <option value="">Chọn phường xã</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <label for="address">Địa chỉ: </label>
+          <input type="text" name="address" required>
+        </div>
+        <button type="submit" name="place_order" class="btn">Đặt hàng</button>
+      </form>
     </div>
-    <input type="hidden" name="shipping-ward-text" id="shipping-ward-text" value="" />
-
- -->
-
- <label for="shipping-country"> Tỉnh thành </label>
-<div>
-  <select required
-    id="shipping-city" name="shipping-city" autocomplete="country-name"
-    onchange="updateHiddenText('shipping-city', 'shipping-city-text')">
-    <option value="">Chọn tỉnh thành</option>
-  </select>
-</div>
-<input type="hidden" name="shipping-city-text" id="shipping-city-text" value="" />
-
-<div>
-  <label for="shipping-country"> Quận huyện </label>
-  <div class="mt-1">
-    <select required
-      id="shipping-district" name="shipping-district" autocomplete="country-name"
-      onchange="updateHiddenText('shipping-district', 'shipping-district-text')">
-      <option value="">Chọn quận huyện</option>
-    </select>
   </div>
-</div>
-<input type="hidden" name="shipping-district-text" id="shipping-district-text" value="" />
-
-<div>
-  <label for="shipping-country"> Phường xã </label>
-  <div class="mt-1">
-    <select required
-      id="shipping-ward" name="shipping-ward" autocomplete="country-name"
-      onchange="updateHiddenText('shipping-ward', 'shipping-ward-text')">
-      <option value="">Chọn phường xã</option>
-    </select>
-  </div>
-</div>
-<input type="hidden" name="shipping-ward-text" id="shipping-ward-text" value="" />
+</section>
+<!-- ionic icons -->
+<script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+</body>
 
 <script>
   function updateHiddenText(selectId, hiddenTextId) {
@@ -152,10 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
   addAddress();
 });
 </script>
-
-
-
-
-    <input type="submit" name="place_order" value="Đặt hàng">
-
-</form>
+<?php
+include 'includes/footer.php';
+?>

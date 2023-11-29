@@ -174,12 +174,12 @@ function get_new_books($limit, $offset = 0) {
         }
     }
 
-    close_db($conn);
-    echo 'Cái này là sách mới, query theo release_date<br>';
-    foreach ($books as $book) {
-        echo $book['name'] .'=== ' . $book['release_date'];
-        echo '<br>';
-    }
+    // close_db($conn);
+    // echo 'Cái này là sách mới, query theo release_date<br>';
+    // foreach ($books as $book) {
+    //     echo $book['name'] .'=== ' . $book['release_date'];
+    //     echo '<br>';
+    // }
     return $books;
 }
 
@@ -197,12 +197,12 @@ function get_new_books($limit, $offset = 0) {
         }
     }
     
-    close_db($conn);
-    echo 'Cái này là sách nhiều view, query theo view_count<br>';
-    foreach ($books as $book) {
-        echo $book['name'] .'=== ' . $book['view_count'];
-        echo '<br>';
-    }
+    // close_db($conn);
+    // echo 'Cái này là sách nhiều view, query theo view_count<br>';
+    // foreach ($books as $book) {
+    //     echo $book['name'] .'=== ' . $book['view_count'];
+    //     echo '<br>';
+    // }
     return $books;
 }
 

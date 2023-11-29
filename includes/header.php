@@ -75,8 +75,8 @@
                 <a href="new_books.php">Sách mới</a>
             </li>			
             <li>
-                <a href="aboutus">Nhà sáng lập</a>
-            </li>			
+                <a href="aboutus.php">Nhà sáng lập</a>
+            </li>		
           </ul>
         </div>
       </div>
@@ -113,4 +113,12 @@
         <a href="cart.php" class="account"><i class="fas fa-shopping-cart"></i></a>
       </div>
     </div>
+    <!-- bottom navbar -->
+    <nav class="bottom-navbar">
+      <a href="#top" class="fas fa-home"></a>
+      <a href="../Catalog/catalog.html" class="fas fa-list"></a>
+      <a href="../Products/HotSales/hotsales.html" class="fas fa-fire"></a>
+      <a href="../AboutUs/aboutus.html" class="fas fa-circle-info"></a>
+      <a href="../Contact/contact.html" class="fa-solid fa-ticket"></a>
+    </nav>
 </header>

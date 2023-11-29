@@ -8,7 +8,7 @@ include 'includes/db.php';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sachmoi.vn</title>
-    <link rel="stylesheet" href="style/bookinfo.css" />
+    <link rel="stylesheet" href="style/author_info.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -30,11 +30,7 @@ include 'includes/db.php';
       <a href="/AboutUs/aboutus.html" class="fas fa-circle-info"></a>
       <a href="/Contact/contact.html" class="fa-solid fa-ticket"></a>
     </nav>
-    <!-- breadscrumb -->
-    <ul class="breadcrumb">
-      <li><a href="/HomePage/homepage.html">Trang chủ</a></li>
-      <li>Annet Schapp</li>
-    </ul>
+    
     <!-- to-the-top button -->
     <button class="to-the-top">
       <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
@@ -46,11 +42,14 @@ if (isset($_GET['id'])) {
     $author_id = $_GET['id'];
 
     $author = get_author_by_id($author_id);
-
     if ($author) {
        
         echo "
-
+        <!-- breadscrumb -->
+        <ul class='breadcrumb'>
+          <li><a href='/HomePage/homepage.html'>Trang chủ</a></li>
+          <li>{$author['name']}</li>
+        </ul>
     <!-- authors starts -->
       <section class='authors'>
         <div class='site-wrapper'>
@@ -72,10 +71,6 @@ if (isset($_GET['id'])) {
 
 include 'includes/footer.php';
 ?>
-
-
-
-
  <!-- ionic icon -->
  <script
       type="module"
@@ -86,6 +81,6 @@ include 'includes/footer.php';
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <!-- scripts -->
-    <script src="bookinfo.js"></script>
+    <script src="js/bookinfo.js"></script>
   </body>
 </html>

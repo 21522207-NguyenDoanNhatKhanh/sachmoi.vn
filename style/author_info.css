@@ -79,19 +79,16 @@ section {
 
 .btn {
     display: inline-block;
-    margin-top: 2rem;
-    padding: 1.1rem 3rem;
+    padding: 1.5rem 3rem;
     border-radius: .5rem;
-    color: var(--darkblue);
-    border: 0.2rem solid var(--darkblue);
-    background: #fff;
-    font-size: 1.7rem;
+    color: #fff;
+    background: var(--blue);
+    font-size: 1.5rem;
     cursor: pointer;
     font-weight: bold;
 }
 
-.btn:hover {
-    color: #fff;
+.btn:hover{
     background: var(--darkblue);
 }
 
@@ -376,36 +373,41 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
-.cart .box {
-    border: var(--border);
-    display: block;
-    text-align: center;
+.authors {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 2rem;
+    background: #fff;
 }
 
-.cart .image {
-    max-width: 20rem;
-    max-height: 25rem;
+.authors .site-wrapper {
+    width: 70%;
 }
 
+.authors img {
+    width: 25rem;
+    height: 25rem;
+    float: left;
+    border: 0.15rem solid var(--darkblue);
+    border-radius: 0.25rem;
+    margin-right: 2rem;
+    border-radius: 50%;
+}
 
-.cart .style {
-    border-bottom: 0.2rem solid var(--darkblue);
-    padding: 1.7rem;
-    font-size: 2.2rem;
-    font-weight: bold;
+.authors .text {
     color: var(--darkblue);
-    text-align: center;
+    font-weight: bold;
 }
 
-.cart .style input {
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: var(--darkblue);
-    max-width: 4rem;
+.authors .text h2 {
+    font-size: 3rem;
 }
+
+.authors .text p {
+    color: var(--blue);
+    font-size: 1.7rem;
+}
+
 /*  */
 
 .footer {
@@ -539,26 +541,12 @@ ul.breadcrumb li a:hover {
     }
 }
 
-@media (max-width: 1100px) {
-    .site-wrapper {
-        margin: 1rem 2rem;
-    }
-
-    html {
-        font-size: 45%;
-    }
-}
-
 @media (max-width: 710px) {
     html {
         font-size: 40%;
     }
     section {
         padding: 1rem;
-    }
-
-    .header .header2 .left .logo {
-        font-size: 2rem;
     }
 }
 

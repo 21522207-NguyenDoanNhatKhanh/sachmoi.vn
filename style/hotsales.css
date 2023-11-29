@@ -380,7 +380,9 @@ ul.breadcrumb li a:hover {
 }
 
 .hotsales .row {
-    display: flex;
+    display: grid !important;
+    grid-template-columns: 23% 23% 23% 23%;
+    column-gap: auto;
     align-items: center;
     justify-content: space-around;
     padding-bottom: 2rem;
@@ -393,6 +395,7 @@ ul.breadcrumb li a:hover {
     position: relative;
     overflow: hidden;
     text-align: center;
+  
     /* flex-basis: calc(33.33% - 20px); */
 }
 
@@ -408,7 +411,8 @@ ul.breadcrumb li a:hover {
 }
 
 .hotsales .row .book .image img {
-    height: 30rem;
+    max-width: 24rem !important;
+    padding: 1rem !important;
 }
 
 .hotsales .row .book .image:hover img {
@@ -438,6 +442,10 @@ ul.breadcrumb li a:hover {
 .hotsales .row .name h3 {
     font-size: 2rem;
     color: var(--darkblue);
+    /* word-break: break-word !important; */
+    white-space: normal !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
 }
 
 .hotsales .row .name h3:hover {

@@ -23,7 +23,7 @@ window.onload = () =>{
 var swiper = new Swiper(".catalogs", {
     loop: true,
     autoplay: {
-        delay: 9000,
+        delay: 2000,
         dispableOnInteraction: false,
     },
     breakpoints: {

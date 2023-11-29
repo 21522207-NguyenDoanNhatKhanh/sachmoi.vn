@@ -27,6 +27,29 @@ $new_books = get_new_books(8);
 </head>
 
 <body>
+<<<<<<< HEAD
+=======
+<!-- to-the-top button -->
+<button class="to-the-top">
+  <a href="#top"
+    ><i class="fa-solid fa-arrow-up"></i
+  ></a>
+</button>
+<!-- home starts -->
+<section class="home" id="home">
+  <div class="site-wrapper">
+    <div class="row">
+      <div class="intro">
+        <h3>Sách mới - Mang tri thức đến mọi nơi</h3>
+        <p>
+          <a href="#home">Sachmoi.vn</a> là nhà sách trực tuyến đáng tin cậy, cung cấp hàng ngàn sách đa dạng về mọi lĩnh vực. Giao diện thân thiện, dễ sử dụng. Tìm kiếm và đặt hàng thuận tiện. Dịch vụ chuyên nghiệp, đóng gói cẩn thận, vận chuyển nhanh chóng. Chất lượng sách đa ngôn ngữ, xuất bản phẩm đa dạng. Tham gia <a href="#home">Sachmoi.vn</a> ngay để khám phá thế giới sách phong phú và thỏa mãn đam mê đọc sách.
+        </p>
+        <a href="../Products/HotSales/hotsales.html" class="btn">Mua sắm ngay</a>
+      </div>
+      <div class="swiper catalogs">
+        <div class="swiper-wrapper">
+          <?php
+>>>>>>> 95043ad84ce9c012f5b8827a0a5f66a9c319c887
 
   <!-- bottom navbar -->
   <nav class="bottom-navbar">
@@ -118,6 +141,7 @@ $new_books = get_new_books(8);
         <h3>Hỗ trợ 24/7</h3>
         <p>Nhân viên luôn có mặt hỗ trợ bạn!</p>
       </div>
+<<<<<<< HEAD
     </div>
     </div>
   </section>
@@ -128,6 +152,19 @@ $new_books = get_new_books(8);
     <div class="site-wrapper">
       <div class="swiper authors-slider">
         <div class="swiper-wrapper">
+=======
+    </div>  
+  </div>
+</section>
+<!-- service ends -->
+<!-- authors starts -->
+<section class="authors">
+<h1 class="heading"><span>Các tác giả</span></h1>
+<div class="site-wrapper">
+  <div class="swiper authors-slider">
+   
+    <div class="swiper-wrapper">
+>>>>>>> 95043ad84ce9c012f5b8827a0a5f66a9c319c887
 
           <?php
           $authors = get_authors();
