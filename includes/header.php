@@ -124,12 +124,4 @@
         <a href="cart.php" class="account"><i class="fas fa-shopping-cart"></i></a>
       </div>
     </div>
-    <!-- bottom navbar -->
-    <nav class="bottom-navbar">
-      <a href="index.php" class="fas fa-home"></a>
-      <a href="../Catalog/catalog.html" class="fas fa-list"></a>
-      <a href="../Products/HotSales/hotsales.html" class="fas fa-fire"></a>
-      <a href="../AboutUs/aboutus.html" class="fas fa-circle-info"></a>
-      <a href="../Contact/contact.html" class="fa-solid fa-ticket"></a>
-    </nav>
 </header>
