@@ -115,7 +115,7 @@
     </div>
     <!-- bottom navbar -->
     <nav class="bottom-navbar">
-      <a href="#top" class="fas fa-home"></a>
+      <a href="index.php" class="fas fa-home"></a>
       <a href="../Catalog/catalog.html" class="fas fa-list"></a>
       <a href="../Products/HotSales/hotsales.html" class="fas fa-fire"></a>
       <a href="../AboutUs/aboutus.html" class="fas fa-circle-info"></a>
