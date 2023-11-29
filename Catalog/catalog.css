@@ -328,6 +328,7 @@ section {
     border-radius: 1rem;
     overflow: hidden;
     display: none;
+    z-index: 9999;
 }
 
 .to-the-top.active {
@@ -554,6 +555,10 @@ ul.breadcrumb li a:hover {
 }
 
 @media (max-width: 616px) {
+    .site-wrapper {
+        margin: 0.5rem 1rem;
+    }
+
     .footer .media {
         display: block;
     }

@@ -327,6 +327,7 @@ section {
     border-radius: 1rem;
     overflow: hidden;
     display: none;
+    z-index: 9999;
 }
 
 .to-the-top.active {
