@@ -107,7 +107,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         <h3>Hỗ trợ 24/7</h3>
         <p>Nhân viên luôn có mặt hỗ trợ bạn!</p>
       </div>
-<<<<<<< HEAD
+
     </div>
     </div>
   </section>
@@ -118,34 +118,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     <div class="site-wrapper">
       <div class="swiper authors-slider">
         <div class="swiper-wrapper">
-=======
-    </div>  
-  </div>
-</section>
-<!-- service ends -->
-<!-- authors starts -->
-<section class="authors">
-<h1 class="heading"><span>Các tác giả</span></h1>
-<div class="site-wrapper">
-  <div class="swiper authors-slider">
-   
-    <div class="swiper-wrapper">
->>>>>>> 95043ad84ce9c012f5b8827a0a5f66a9c319c887
-
           <?php
-          $authors = get_authors();
+              $authors = get_authors();
 
-          // Hiển thị thông tin tác giả
-          if ($authors) {
-            foreach ($authors as $author) {
-              echo "<div class='swiper-slide'>
-        <div class='image'>
-          <a href='author.php?id={$author['id']}'><img src='images/authors/{$author['Image']}' alt='Annet Schaap'></a>            
-        </div>
-        <div class='name'>
-          <h3><a href='author.php?id={$author['id']}'>{$author['name']}</a></h3>
-        </div>
-      </div>";
+              // Hiển thị thông tin tác giả
+              if ($authors) {
+                foreach ($authors as $author) {
+                  echo "<div class='swiper-slide'>
+                    <div class='image'>
+                      <a href='author.php?id={$author['id']}'><img src='images/authors/{$author['Image']}' alt='Annet Schaap'></a>            
+                    </div>
+                    <div class='name'>
+                      <h3><a href='author.php?id={$author['id']}'>{$author['name']}</a></h3>
+                    </div>
+                  </div>";
             }
           }
           ?>

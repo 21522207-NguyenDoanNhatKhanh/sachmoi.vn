@@ -75,14 +75,7 @@
             </li>			
             <li>
                 <a href="contact.php">Ưu đãi</a>
-            </li>
-<<<<<<< HEAD
-            <li>
-                <a href="aboutus.php">Nhà sáng lập</a>
-            </li>			
-            <li>
-                <a href="contact.php">Ưu đãi</a>
-            </li>
+            </li
           </ul>
         </div>
       </div>
