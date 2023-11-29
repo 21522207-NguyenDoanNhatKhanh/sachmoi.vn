@@ -146,4 +146,8 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 <?php
 include 'includes/footer.php';
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 90b15fe9fb6ccc67404e2a9a11734eb41aba6332

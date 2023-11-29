@@ -79,18 +79,16 @@ section {
 .btn {
     display: inline-block;
     padding: 1.5rem 3rem;
-    border-radius: 4rem;
-    color: var(--darkblue);
-    background: #fff;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--blue);
     font-size: 1.5rem;
-    border: 0.2rem solid var(--darkblue);
     cursor: pointer;
     font-weight: bold;
 }
 
 .btn:hover{
     background: var(--darkblue);
-    color: #fff;
 }
 
 .site-wrapper {
@@ -374,54 +372,135 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
-.checkform .container {
-    margin: auto;
-    padding: 1.2rem;
-    overflow: hidden;
-    border: .2rem solid var(--darkblue);
-    border-radius: 2rem;
-    box-shadow: var(--box-shadow);
-    height: 56rem;
-    width: 40rem;
-}
-
-.container h2 {
-    font-size: 4rem;
-    font-weight: bold;
-    color: var(--darkblue);
+.contact .offer {
+    width: 30rem;
+    height: 50rem;
+    padding-top: 1rem;
+    background: var(--darkblue);
+    color: var(--lightblue);
     text-align: center;
 }
 
-.container .input-box {
+.contact .offer h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.contact .offer div {
+    display: block;
+    padding: 2rem;
+    text-align: left;
+}
+
+.contact .offer div p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact .container {
+    display: inline-flex;
+    overflow: hidden;
+    margin: auto;
+    border: .2rem solid var(--darkblue);
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.contact .wrapper {
+    width: 40rem;
+    color: var(--darkblue);
+    padding: 2rem;
+    height: 50rem;
+}
+
+.contact .wrapper .contact-form h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.contact .wrapper .contact-form .input-box {
     position: relative;
     width: 100%;
-    height: 5rem;
-    margin: 1.5rem 0;
-    padding-top: 1rem;
-}
-
-.container .input-box label {
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: var(--darkblue);
-}
-
-.container .input-box input, .container .input-box select{
-    width: 95%;
     height: 4rem;
+    margin: 1.5rem 0;
+}
+
+.contact .wrapper .contact-form .input-box input {
+    width: 95%;
+    height: 100%;
     background: transparent;
+    border: none;
     outline: none;
     border: var(--border);
     border-radius: 4rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: var(--darkblue);
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
-.container .btn{
-    width: 100%;
-    margin-top: 1.7rem;
+.contact .wrapper .contact-form .input-box input::placeholder {
+    color: var(--black);
 }
+
+.contact .wrapper .contact-form .input-box i {
+    position: absolute;
+    right: 4rem;    
+    transform: translateY(40%);
+    font-size: 2rem;
+}
+
+::-webkit-calendar-picker-indicator {
+    font-size: 2rem;
+}
+
+.contact .wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.contact .wrapper .remember-forgot label input {
+    accent-color: var(--darkblue);
+    margin-right: .5rem;
+}
+
+.contact .wrapper .remember-forgot a {
+    color: var(--darkblue);
+    text-decoration: none;
+}
+
+.contact .wrapper .remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.contact .wrapper .btn {
+    width: 100%;
+    border-radius: 4rem;
+}
+
+.contact .wrapper .register-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.contact .wrapper .register-link p a {
+    color: var(--darkblue);
+    text-decoration: none;
+}
+
+.contact .wrapper .register-link p a:hover {
+    text-decoration: underline;
+}
+
 /*  */
 
 .footer {
@@ -562,10 +641,6 @@ ul.breadcrumb li a:hover {
     section {
         padding: 1rem;
     }
-
-    .header .header2 .left .logo {
-        font-size: 2rem;
-    }
 }
 
 @media (max-width: 616px) {
@@ -582,8 +657,4 @@ ul.breadcrumb li a:hover {
     .footer .media .newsletter input{
         height: 4rem;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 90b15fe9fb6ccc67404e2a9a11734eb41aba6332

@@ -21,6 +21,7 @@ include 'includes/db.php';
   <body></body>
 
 <?php include 'includes/header.php'; ?>
+<<<<<<< HEAD
 
  <!-- bottom navbar -->
  <nav class="bottom-navbar">
@@ -36,6 +37,14 @@ include 'includes/db.php';
       <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
     </button>
 
+=======
+ 
+    <!-- breadscrumb -->
+    <ul class="breadcrumb">
+      <li><a href="/HomePage/homepage.html">Trang chủ</a></li>
+      <li>Annet Schapp</li>
+    </ul>
+>>>>>>> 90b15fe9fb6ccc67404e2a9a11734eb41aba6332
 
 <?php
 if (isset($_GET['id'])) {

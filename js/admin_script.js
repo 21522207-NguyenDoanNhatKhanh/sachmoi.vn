@@ -1,12 +1,4 @@
 
-
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
    document.addEventListener('click', function(event) {
       if(document.querySelector('.edit-product-form1')) {

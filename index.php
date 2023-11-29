@@ -16,6 +16,7 @@ $new_books = get_new_books(8);
 
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
 <head>
   <meta charset="UTF-8">
@@ -35,6 +36,24 @@ $new_books = get_new_books(8);
     ><i class="fa-solid fa-arrow-up"></i
   ></a>
 </button>
+=======
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachmoi.vn</title>
+    <link rel="stylesheet" href="style/homepage.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+<body>
+
+>>>>>>> 90b15fe9fb6ccc67404e2a9a11734eb41aba6332
 <!-- home starts -->
 <section class="home" id="home">
   <div class="site-wrapper">
@@ -44,7 +63,7 @@ $new_books = get_new_books(8);
         <p>
           <a href="#home">Sachmoi.vn</a> là nhà sách trực tuyến đáng tin cậy, cung cấp hàng ngàn sách đa dạng về mọi lĩnh vực. Giao diện thân thiện, dễ sử dụng. Tìm kiếm và đặt hàng thuận tiện. Dịch vụ chuyên nghiệp, đóng gói cẩn thận, vận chuyển nhanh chóng. Chất lượng sách đa ngôn ngữ, xuất bản phẩm đa dạng. Tham gia <a href="#home">Sachmoi.vn</a> ngay để khám phá thế giới sách phong phú và thỏa mãn đam mê đọc sách.
         </p>
-        <a href="../Products/HotSales/hotsales.html" class="btn">Mua sắm ngay</a>
+        <a href="bestselling.php" class="btn">Mua sắm ngay</a>
       </div>
       <div class="swiper catalogs">
         <div class="swiper-wrapper">

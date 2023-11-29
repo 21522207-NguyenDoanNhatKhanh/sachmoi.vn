@@ -10,6 +10,7 @@
     --border-hover: 0.1rem solid var(--black);
     --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
 }
+
 *{
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -79,18 +80,16 @@ section {
 .btn {
     display: inline-block;
     padding: 1.5rem 3rem;
-    border-radius: 4rem;
-    color: var(--darkblue);
-    background: #fff;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--blue);
     font-size: 1.5rem;
-    border: 0.2rem solid var(--darkblue);
     cursor: pointer;
     font-weight: bold;
 }
 
 .btn:hover{
     background: var(--darkblue);
-    color: #fff;
 }
 
 .site-wrapper {
@@ -374,53 +373,44 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
-.checkform .container {
-    margin: auto;
-    padding: 1.2rem;
-    overflow: hidden;
-    border: .2rem solid var(--darkblue);
-    border-radius: 2rem;
-    box-shadow: var(--box-shadow);
-    height: 56rem;
-    width: 40rem;
+.aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
 }
 
-.container h2 {
-    font-size: 4rem;
+.aboutus .site-wrapper {
+    width: 70%;
+}
+
+.aboutus img {
+    max-width: 320px;
+    float: right;
+    border: 0.15rem solid var(--darkblue);
+    border-radius: 0.25rem;
+    margin-left: 1rem;
+}
+
+.aboutus .text {
+    color: var(--darkblue);
     font-weight: bold;
-    color: var(--darkblue);
-    text-align: center;
 }
 
-.container .input-box {
-    position: relative;
-    width: 100%;
-    height: 5rem;
-    margin: 1.5rem 0;
-    padding-top: 1rem;
+.aboutus .text h2 {
+    font-size: 3rem;
 }
 
-.container .input-box label {
+.aboutus .text p {
     font-size: 1.7rem;
-    font-weight: bold;
-    color: var(--darkblue);
 }
 
-.container .input-box input, .container .input-box select{
-    width: 95%;
-    height: 4rem;
-    background: transparent;
-    outline: none;
-    border: var(--border);
-    border-radius: 4rem;
-    font-size: 1.7rem;
-    color: var(--darkblue);
-    padding: 0 1rem;
+.aboutus .text a {
+    color: var(--blue);
 }
 
-.container .btn{
-    width: 100%;
-    margin-top: 1.7rem;
+.aboutus .text a:hover {
+    text-decoration: underline;
 }
 /*  */
 
@@ -562,10 +552,6 @@ ul.breadcrumb li a:hover {
     section {
         padding: 1rem;
     }
-
-    .header .header2 .left .logo {
-        font-size: 2rem;
-    }
 }
 
 @media (max-width: 616px) {
@@ -582,8 +568,4 @@ ul.breadcrumb li a:hover {
     .footer .media .newsletter input{
         height: 4rem;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 90b15fe9fb6ccc67404e2a9a11734eb41aba6332
