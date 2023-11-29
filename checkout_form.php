@@ -144,10 +144,10 @@ document.addEventListener("DOMContentLoaded", function () {
   addAddress();
 });
 </script>
-<?php
-include 'includes/footer.php';
-<<<<<<< HEAD
-?>
-=======
-?>
->>>>>>> 90b15fe9fb6ccc67404e2a9a11734eb41aba6332
+
+
+
+
+    <input type="submit" name="place_order" value="Đặt hàng">
+
+</form>

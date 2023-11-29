@@ -69,7 +69,7 @@
             </li>
             <li>
                 <a href="bestselling.php">Sách bán chạy</a>
-            </li>		
+            </li>				
             <li>
                 <a href="aboutus.php">Nhà sáng lập</a>
             </li>			
@@ -78,13 +78,11 @@
             </li>
 <<<<<<< HEAD
             <li>
-                <a href="new_books.php">Sách mới</a>
+                <a href="aboutus.php">Nhà sáng lập</a>
             </li>			
             <li>
-                <a href="aboutus.php">Nhà sáng lập</a>
-            </li>		
-=======
->>>>>>> 90b15fe9fb6ccc67404e2a9a11734eb41aba6332
+                <a href="contact.php">Ưu đãi</a>
+            </li>
           </ul>
         </div>
       </div>
