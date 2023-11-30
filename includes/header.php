@@ -37,15 +37,6 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="">Kinh tế</a>
-                  <ul class="submenu2">
-                    <li><a href="">Bài học kinh doanh</a></li>
-                    <li><a href="">Phân tích kinh tế</a></li>
-                    <li><a href="">Quản trị - lãnh đạo</a></li>
-                    <li><a href="">Khởi nghiệp - bán hàng</a></li>
-                  </ul>
-                </li>
-                <li>
                   <a href="category.php?id=2">Sách tham khảo</a>
                   <ul class="submenu2">
                     <li><a href="">Tiếng Anh</a></li>
