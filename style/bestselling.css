@@ -79,17 +79,19 @@ section {
 
 .btn {
     display: inline-block;
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
     border-radius: .5rem;
-    color: #fff;
-    background: var(--blue);
+    color: var(--blue);
+    background: #fff;
     font-size: 1.5rem;
     cursor: pointer;
     font-weight: bold;
+    margin-top: 0.5rem;
 }
 
 .btn:hover{
     background: var(--darkblue);
+    color: #fff;
 }
 
 .site-wrapper {
@@ -470,10 +472,17 @@ ul.breadcrumb li a:hover {
     justify-content: center;
     margin-bottom: 4rem;
     text-align: center;
-  
 }
+
 .listpage p {
     line-height: 5rem;
+    margin: 0 3rem;
+}
+
+.listpage p a, .listpage p span{
+    margin: 0 0.75rem;
+    font-size: 2.5rem !important;
+    font-weight: 500;
 }
 
 /*  */
