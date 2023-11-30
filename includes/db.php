@@ -91,7 +91,7 @@ function get_total_rows($searchTerm = '', $category_id = null, $limit = null, $o
 
         $sql = "SELECT COUNT(*) as total FROM `product` $searchCondition $categoryCondition";
     }
-    echo $sql;
+    //echo $sql;
 
     $result = $conn->query($sql);
 
