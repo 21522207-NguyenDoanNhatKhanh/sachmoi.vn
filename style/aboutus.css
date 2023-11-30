@@ -385,7 +385,7 @@ ul.breadcrumb li a:hover {
 }
 
 .aboutus img {
-    max-width: 320px;
+    max-width: 380px;
     float: right;
     border: 0.15rem solid var(--darkblue);
     border-radius: 0.25rem;
@@ -403,6 +403,7 @@ ul.breadcrumb li a:hover {
 
 .aboutus .text p {
     font-size: 1.7rem;
+    text-align: justify;
 }
 
 .aboutus .text a {
