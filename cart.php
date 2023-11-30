@@ -93,6 +93,5 @@ include 'includes/db.php';
 <!-- scripts -->
 <script src="cart.js"></script>
 </body>
-<script src="js/update_cart.js"></script>
-
+<script src="js/functions.js"></script>
 </html>
