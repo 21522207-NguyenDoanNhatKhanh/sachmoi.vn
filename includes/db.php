@@ -3,7 +3,7 @@ function connect_db() {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "sachmoi_db";
+    $dbname = "09";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -466,4 +466,22 @@ function get_author_by_id($authorId) {
         return null;
     }
 }
+
+function save_subscriber($full_name, $phone_number, $birthday, $address, $email) {
+    $conn = connect_db();
+
+    $sql = "INSERT INTO subcriber (full_name, phone_number, birthday, address, email)
+            VALUES ('$full_name', '$phone_number', '$birthday', '$address', '$email')";
+
+    if ($conn->query($sql) === TRUE) {
+        // echo "Đăng ký thành công!";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
+}
+
+
+
 ?>
