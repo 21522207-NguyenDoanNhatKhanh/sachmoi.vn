@@ -1,5 +1,5 @@
-
 <?php
+ob_start();
 session_start();
 include 'includes/header.php';
 
@@ -24,6 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error_message = 'Đăng ký không thành công.';
     }
 }
+ob_end_flush();
 ?>
 
 
@@ -100,7 +101,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             <div class="login-link">
               <p>
                 Đã có tài khoản?
-                <a href="../Login/login.html">Đăng nhập</a>
+                <a href="login.php">Đăng nhập</a>
               </p>
             </div>
           </form>
