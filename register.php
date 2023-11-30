@@ -47,19 +47,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 </head>
 <body>
 
-
-
-
-
-<!-- to-the-top button -->
-<button class="to-the-top">
-  <a href="#top"
-    ><i class="fa-solid fa-arrow-up"></i
-  ></a>
-</button>
 <!-- breadscrumb -->
 <ul class="breadcrumb">
-  <li><a href="../HomePage/homepage.html">Trang chủ</a></li>
+  <li><a href="index.php">Trang chủ</a></li>
   <li>Đăng ký</li>
 </ul>
 <!-- register form starts -->
@@ -110,12 +100,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
   </div>    
 </section>
 <!-- login form ends -->
-
-
-
-
-
-
 
      <?php include 'includes/footer.php';?>
     <!-- ionic icon -->

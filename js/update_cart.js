@@ -10,17 +10,17 @@ function updateCart(input) {
           var result = JSON.parse(xhr.responseText);
 
           if (result.status === 'success') {
-            let priceElement = document.querySelector('#product-price');
-              let totalPriceElement = document.querySelector('#total-price');
+            let priceElement = form.parentNode.parentNode.querySelector('#product-price');
+            let totalPriceElement = form.parentNode.parentNode.querySelector('#total-price');
 
-              priceElement.textContent = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(result.price);
-              totalPriceElement.textContent = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(result.totalPrice) ;
+            priceElement.textContent = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(result.price);
+            totalPriceElement.textContent = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(result.totalPrice) ;
           }
       }
   };
   xhr.open('POST', 'cart/update_cart.php', true);
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-  xhr.send('product_id=' + productId + '&quantity=' + quantity);
+  xhr.send(`product_id=${productId}&quantity=${quantity}`);
 }
 
 function removeFromCart(button) {
