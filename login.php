@@ -1,6 +1,7 @@
 <?php
+ob_start();
 session_start();
-include 'includes/header.php';
+include 'includes/header.php';  
 
 
 if (isset($_SESSION['user_id'])) {
@@ -23,6 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error_message = 'Tên đăng nhập hoặc mật khẩu không chính xác.';
     }
 }
+ob_end_flush(); 
 ?>
 
 <!DOCTYPE html>
