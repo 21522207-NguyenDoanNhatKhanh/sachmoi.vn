@@ -13,7 +13,7 @@
       </div>
       <div class="form">
         <input type="email" placeholder="Nhập email của bạn" id="" class="box">
-        <a href="/Contact/contact.html"><input type="submit" value="Đăng ký" class="btn"></a>
+        <a href="contact.php"><input type="submit" value="Đăng ký" class="btn"></a>
       </div>
     </div>
   </div>
