@@ -45,24 +45,9 @@ ob_end_flush();
   </head>
   <body>
 
-
- <!-- to-the-top button -->
- <button class="to-the-top">
-      <a href="#top"
-        ><i class="fa-solid fa-arrow-up"></i
-      ></a>
-    </button>
-    <!-- bottom navbar -->
-    <nav class="bottom-navbar">
-      <a href="../HomePage/homepage.html" class="fas fa-home"></a>
-      <a href="../Catalog/catalog.html" class="fas fa-list"></a>
-      <a href="../Products/HotSales/hotsales.html" class="fas fa-fire"></a>
-      <a href="../AboutUs/aboutus.html" class="fas fa-circle-info"></a>
-      <a href="../Contact/contact.html" class="fa-solid fa-ticket"></a>
-    </nav>
     <!-- breadscrumb -->
     <ul class="breadcrumb">
-      <li><a href="../HomePage/homepage.html">Trang chủ</a></li>
+      <li><a href="index.php">Trang chủ</a></li>
       <li>Đăng nhập</li>
     </ul>
     <!-- login form starts -->
