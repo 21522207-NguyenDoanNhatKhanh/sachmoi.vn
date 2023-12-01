@@ -19,7 +19,7 @@ include 'includes/db.php';
 
 <!-- breadscrumb -->
 <ul class="breadcrumb">
-  <li><a href="../HomePage/homepage.html">Trang chủ</a></li>
+  <li><a href="index.php">Trang chủ</a></li>
   <li>Thông tin</li>
 </ul>
 
@@ -51,7 +51,7 @@ if (isset($_GET['id'])) {
                   </div>
                   <div class='price'><span>{$book['price']}&#x20AB;</span></div>
                   <div class='func'>
-                  <a href='javascript:void(0);' class='fas fa-shopping-cart add-to-cart' data-product-id='{$book['id']}'></a>
+                  <a class='btn buy-now' href='javascript:void(0);'  data-product-id='{$book['id']}'><i class='fas fa-shopping-cart add-to-cart'></i></a>
                     <a href='' class='btn buy-now' data-product-id='{$book['id']}'>Mua ngay</a>
                   </div>
                 </div>
