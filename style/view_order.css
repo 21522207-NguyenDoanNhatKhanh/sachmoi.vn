@@ -381,26 +381,31 @@ ul.breadcrumb li a:hover {
     font-weight: bold;
     color: var(--darkblue);
     text-align: center;
+    padding-top: 1rem;
 }
 .container{
     background-color: var(--lightblue);
     align-items: center;
 }
 
-ul{
-    background-color: darkblue;
-    border: solid yellowgreen 3px;
-    margin: 0;
-    padding: 0;
+.container .box{
+    display: flex;
+    justify-content: center;
+}
+
+.container ul{
+    background-color: #fff;
+    margin: 25px 0;
+    padding: 25px;
     list-style: none;
     display: grid;
     align-items: center;
 }
-ul li{
-    margin: auto;
-    text-align: center;
-    font-size: 2.5 rem ;
-    color: white;
+.container ul li{
+    /* margin: auto; */
+    text-align: left;
+    font-size: 2.5rem ;
+    color: var(--black);
 
 }
 /**/

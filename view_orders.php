@@ -26,21 +26,23 @@ include 'includes/header.php';
             if ($user_info) {
                 $username = $user_info['username'];
 
-                echo '<h2>Các đơn hàng của ' . $username . '</h2>';
+                echo '<h2>Các đơn hàng của bạn (' . $username . ')</h2>';
 
                 $orders = get_user_orders($user_id);
 
                 if ($orders) {
-                    echo '<ul>';
                     foreach ($orders as $order) {
-                        echo '<ul>';
-                        echo '<li>Mã đơn hàng: ' . $order['order_id'] . '</li>';
-                        echo '<li>Tổng số tiền: ' . $order['total_amount'] . '</li>';
-                        echo '<li>Trạng thái vận chuyển: ' . $order['shipping_status'] . '</li>';
-                        echo '<li>Trạng thái thanh toán: ' . $order['payment_status'] . '</li>';
-                        echo '<li>Ngày đặt hàng: ' . $order['order_date'] . '</li>';
+                        echo '<div class="box">';
+                            echo '<ul>';
+                            echo '<li>Mã đơn hàng: ' . $order['order_id'] . '</li>';
+                            echo '<li>Tổng số tiền: ' . $order['total_amount'] . '</li>';
+                            echo '<li>Trạng thái vận chuyển: ' . $order['shipping_status'] . '</li>';
+                            echo '<li>Trạng thái thanh toán: ' . $order['payment_status'] . '</li>';
+                            echo '<li>Ngày đặt hàng: ' . $order['order_date'] . '</li>';
+                            echo '</ul>';
+                        echo '</div>';
                     }
-                    echo '</ul>';
+                    
                 } else {
                     echo '<p>Bạn chưa có đơn hàng nào.</p>';
                 }
