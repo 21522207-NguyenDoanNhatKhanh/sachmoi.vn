@@ -404,9 +404,10 @@ ul.breadcrumb li a:hover {
 .container ul li{
     /* margin: auto; */
     text-align: left;
-    font-size: 2.5rem ;
-    color: var(--black);
-
+    font-size: 1.7rem ;
+    color: var(--darkblue);
+    font-weight: bold;
+    padding: 1rem;
 }
 /**/
 .footer {
