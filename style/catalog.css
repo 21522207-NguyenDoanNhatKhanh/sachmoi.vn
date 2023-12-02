@@ -406,6 +406,18 @@ ul.breadcrumb li a:hover {
     color: var(--blue);
 }
 
+.catalog .container .box .father-category {
+    border: 0.15rem solid var(--black);
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.catalog .container .box .father-category:hover {
+    background-color: var(--darkblue);
+    color: #fff;
+}
+
 /*  */
 
 .footer {
@@ -549,6 +561,18 @@ ul.breadcrumb li a:hover {
 }
 
 @media (max-width: 616px) {
+    html {
+        font-size: 35%;
+    }
+
+    section {
+        padding: 0.5rem 0;
+    }
+
+    .site-wrapper {
+        margin: 1rem;
+    }
+
     .footer .media {
         display: block;
     }

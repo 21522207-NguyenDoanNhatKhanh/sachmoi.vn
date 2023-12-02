@@ -388,6 +388,7 @@ ul.breadcrumb li a:hover {
     align-items: center;
     justify-content: space-around;
     padding-bottom: 2rem;
+    margin-bottom: 2rem;
     flex-wrap: wrap;
     flex: 0 1 calc(33.33% - 2rem);
 }
@@ -397,11 +398,10 @@ ul.breadcrumb li a:hover {
     position: relative;
     overflow: hidden;
     text-align: center;
-  
-    /* flex-basis: calc(33.33% - 20px); */
 }
 
 .hotsales .row .book .image {
+    height: 40rem;
     padding: 1rem;
     border: var(--border);
     background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
@@ -413,7 +413,8 @@ ul.breadcrumb li a:hover {
 }
 
 .hotsales .row .book .image img {
-    max-width: 24rem !important;
+    height: 30rem;
+    max-width: 22rem !important;
     padding: 1rem !important;
 }
 
@@ -590,12 +591,6 @@ ul.breadcrumb li a:hover {
 
 
 /* media queries */
-@media (min-width: 1385px) {
-    section {
-        padding: 3rem 2rem;
-    }
-}
-
 @media (max-width: 1384px) {
     html {
         scroll-padding-top: 0;
@@ -614,9 +609,19 @@ ul.breadcrumb li a:hover {
     }
 }
 
+@media (max-width: 1371px) {
+    .btn {
+        padding: 1rem 2rem;
+    }
+}
+
 @media (max-width: 1170px) {
     html {
         font-size: 50%;
+    }
+
+    .btn {
+        padding: 0.8rem 1.7rem;
     }
 
     .site-wrapper {
@@ -637,7 +642,11 @@ ul.breadcrumb li a:hover {
     }
 }
 
-@media (max-width: 752px) {
+@media (max-width: 860px) {
+    .hotsales .row .func .btn {
+        padding: 0.75rem 1.5rem;
+    }
+
     .hotsales .row .book {
         width: 25rem;
     }
@@ -646,6 +655,12 @@ ul.breadcrumb li a:hover {
         width: 20rem;
     }
 
+    .site-wrapper {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 752px) {
     .footer .media {
         display: block;
     }
@@ -661,18 +676,32 @@ ul.breadcrumb li a:hover {
     }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 700px) {
     .hotsales .row .func .btn {
-        padding: 0.75rem 1.75rem;
+        padding: 0.5rem 1.25rem;
+    }
+
+    .hotsales .row .book {
+        width: 20rem;
+    }
+
+    .hotsales .row .book img{
+        width: 17rem;
+        height: 20rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 564px) {
     html {
-        font-size: 35%;
+        font-size: 32%;
     }
     section {
         padding: 0.5rem;
+    }
+
+    .hotsales .row .func .btn {
+        padding: 0.4rem 0.95rem;
+        font-size: 1.2rem;
     }
 
     .site-wrapper {
@@ -680,17 +709,17 @@ ul.breadcrumb li a:hover {
     }
 
     .hotsales .row .book {
-        width: 20rem;
+        width: 18rem;
         margin: 0.5rem 0;
     }
 
-    .hotsales .row .book img {
-        width: 15rem;
+    .hotsales .row .book .image{
+        height: 35rem;
     }
 
-    .hotsales .row .func .btn {
-        padding: 0.5rem 1rem;
-    }
+    .hotsales .row .book img {
+        width: 13rem;
+    }    
 }
 
 

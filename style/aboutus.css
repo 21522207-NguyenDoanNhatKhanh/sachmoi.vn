@@ -380,12 +380,8 @@ ul.breadcrumb li a:hover {
     background: #fff;
 }
 
-.aboutus .site-wrapper {
-    width: 70%;
-}
-
 .aboutus img {
-    max-width: 380px;
+    max-width: 60rem;
     float: right;
     border: 0.15rem solid var(--darkblue);
     border-radius: 0.25rem;

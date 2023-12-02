@@ -29,37 +29,37 @@ include 'includes/db.php';
             <div class="container">
                 <div class="box">
                     <ul>
-                    <li><a href="category.php?id=4"><h2>Văn học Việt Nam</h2></a></li>
-                    <li><a href="">Tiểu thuyết</a></li>
-                    <li><a href="">Truyện ngắn</a></li>
-                    <li><a href="">Thơ</a></li>
+                    <li><a href="category.php?id=4" class="father-category"><h2>Văn học Việt Nam</h2></a></li>
+                    <li><a href="">- Tiểu thuyết</a></li>
+                    <li><a href="">- Truyện ngắn</a></li>
+                    <li><a href="">- Thơ</a></li>
                     </ul>
                 </div>
                 <div class="box">
                     <ul>
-                    <li><a href="category.php?id=1"><h2>Văn học nước ngoài</h2></a></li>
-                    <li><a href="">Đương đại</a></li>
-                    <li><a href="">Lãng mạn</a></li>
-                    <li><a href="">Trinh thám/ kinh dị</a></li>
-                    <li><a href="">Light novel</a></li>
-                    <li><a href="">Khoa học</a></li>
+                    <li><a href="category.php?id=1" class="father-category"><h2>Văn học nước ngoài</h2></a></li>
+                    <li><a href="">- Đương đại</a></li>
+                    <li><a href="">- Lãng mạn</a></li>
+                    <li><a href="">- Trinh thám/ kinh dị</a></li>
+                    <li><a href="">- Light novel</a></li>
+                    <li><a href="">- Khoa học</a></li>
                     </ul>
                 </div>
                 <div class="box">
                     <ul>
-                    <li><a href="category.php?id=2"><h2>Sách tham khảo</h2></a></li>
-                    <li><a href="">Tiếng Anh</a></li>
-                    <li><a href="">Tiếng Nhật</a></li>
-                    <li><a href="">Tiếng Trung</a></li>
-                    <li><a href="">Tiếng Pháp</a></li>
+                    <li><a href="category.php?id=2" class="father-category"><h2>Sách tham khảo</h2></a></li>
+                    <li><a href="">- Tiếng Anh</a></li>
+                    <li><a href="">- Tiếng Nhật</a></li>
+                    <li><a href="">- Tiếng Trung</a></li>
+                    <li><a href="">- Tiếng Pháp</a></li>
                     </ul>
                 </div>
                 <div class="box">
                     <ul>
-                    <li><a href="category.php?id=3"><h2>Sách thiếu nhi</h2></a></li>
-                    <li><a href="">Sách ảnh</a></li>
-                    <li><a href="">Sách nói</a></li>
-                    <li><a href="">Sách tô màu</a></li>
+                    <li><a href="category.php?id=3" class="father-category"><h2>Sách thiếu nhi</h2></a></li>
+                    <li><a href="">- Sách ảnh</a></li>
+                    <li><a href="">- Sách nói</a></li>
+                    <li><a href="">- Sách tô màu</a></li>
                     </ul>
                 </div>
             </div>
