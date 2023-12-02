@@ -50,7 +50,7 @@
                                     <img src="<?= $imageSrc ?>" alt=""></a>
                                 <!-- <a href="book.php?id=<?= $book['id'] ?>"><img src="./book_image/<?= $book['image'] ?>" alt=""></a> -->
                                 <div class="func">
-                                    <a href="" class="btn"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="" class='btn add-to-cart' data-product-id='<?=$book['id'] ?>'><i class="fa-solid fa-cart-shopping"></i></a>
                                     <a href="" class="btn">Mua ngay</a>
                                 </div>
                             </div>
