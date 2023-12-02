@@ -753,6 +753,13 @@ section {
     }
 }
 
+@media (max-width: 1240px) {
+    .service-container {
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        gap: 2rem;
+    }
+}
+
 @media (max-width: 1170px) {
     html {
         font-size: 50%;
@@ -781,6 +788,15 @@ section {
 }
 
 @media (max-width: 616px) {
+    .site-wrapper {
+        margin: 1rem
+    }
+
+    .service-container {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 2rem;
+    }
+
     .footer .media {
         display: block;
     }

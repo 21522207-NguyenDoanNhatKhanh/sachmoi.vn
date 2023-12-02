@@ -79,15 +79,15 @@ section {
 
 .btn {
     display: inline-block;
-    margin-top: 2rem;
-    padding: 1.1rem 3rem;
+    padding: 1.5rem 3rem;
+    border: 0.2rem solid var(--darkblue);
     border-radius: .5rem;
     color: var(--darkblue);
-    border: 0.2rem solid var(--darkblue);
-    background: #fff;
-    font-size: 1.7rem;
+    background: transparent;
+    font-size: 1.5rem;
     cursor: pointer;
     font-weight: bold;
+    margin-top: 0.5rem;
 }
 
 .btn:hover {
@@ -563,6 +563,13 @@ ul.breadcrumb li a:hover {
 }
 
 @media (max-width: 616px) {
+    html {
+        font-size: 25%;
+    }
+    .site-wrapper {
+        margin: 1rem;
+    }
+
     .footer .media {
         display: block;
     }
