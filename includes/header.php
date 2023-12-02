@@ -16,7 +16,7 @@
               <a href="index.php">Trang chủ</a>
             </li>
             <li>
-              <a href="">Danh mục &#x25BC;</a>
+              <a href="catalog.php">Danh mục &#x25BC;</a>
               <ul class="submenu">
                 <li>
                   <a href="category.php?id=4">Văn học Việt Nam</a>

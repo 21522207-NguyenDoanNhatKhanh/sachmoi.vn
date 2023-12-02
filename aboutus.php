@@ -23,25 +23,16 @@
                 <a href="index.php">Sách mới</a>
             </h2>
             <p>
-                Chào mừng đến với nhà sách trực tuyến <a href="index.php">sachmoi.vn</a>! Chúng tôi là một
-                nhóm sinh viên nhiệt huyết và đam mê về văn hóa sách. Với niềm đam
-                mê chung về việc chia sẻ tri thức và khám phá thế giới qua trang
-                sách, chúng tôi đã quyết định tạo ra một nền tảng trực tuyến để mang
-                đến cho mọi người những cuốn sách tuyệt vời. Với kho sách đa dạng và
-                phong phú, chúng tôi cam kết mang đến cho bạn những tác phẩm độc đáo
-                từ các thể loại khác nhau, bao gồm tiểu thuyết, kinh doanh, khoa
-                học, lịch sử và nhiều hơn nữa. Bạn sẽ tìm thấy những quyển sách phổ
-                biến của các tác giả nổi tiếng cũng như những tác phẩm mới và tiềm
-                năng từ các tác giả trẻ. Trang web của chúng tôi được thiết kế đơn
-                giản và dễ sử dụng. Bạn có thể dễ dàng tìm kiếm và duyệt qua các
-                danh mục sách, đọc các đánh giá từ cộng đồng và đặt hàng một cách
-                nhanh chóng và tiện lợi. Chúng tôi cam kết đem đến cho bạn trải
-                nghiệm mua sắm sách trực tuyến tuyệt vời, với dịch vụ chăm sóc khách
-                hàng tận tâm và giao hàng nhanh chóng. Hãy ghé thăm trang web của
-                chúng tôi ngay hôm nay và khám phá thế giới tri thức đang chờ đón
-                bạn. Chúng tôi tin rằng sách là nguồn cảm hứng vô tận và hy vọng
-                được chia sẻ niềm đam mê đó với bạn! Xin cảm ơn và chúc bạn có những
-                trải nghiệm đọc sách tuyệt vời!
+                Chào mừng đến với nhà sách trực tuyến <a href="index.php">sachmoi.vn</a>! 
+                Chào mừng bạn đến với “Sách Mới” - trang web bán sách dành riêng cho sinh viên. “Sách Mới” là trang web được tạo ra với mục đích cung cấp một nguồn tài nguyên sách học thuật đáng tin cậy cho sinh viên.
+
+                <br>Lý do chúng tôi làm trang web là bởi vì chúng tôi rất yêu thích sách. Chúng tôi tin rằng sách là nguồn tri thức vô tận, là cầu nối giữa hiện tại và tương lai, giữa những gì đã biết và những gì còn chưa biết. Với “Sách Mới”, chúng tôi muốn chia sẻ niềm đam mê này đến với mọi sinh viên.
+
+                <br>Tại “Sách Mới”, chúng tôi cung cấp một loạt các loại sách từ giáo trình, sách tham khảo, tiểu thuyết, đến sách kỹ năng mềm. Tất cả đều được tuyển chọn kỹ lưỡng để phù hợp với nhu cầu học tập và phát triển bản thân của sinh viên.
+
+                <br>Đặc biệt, chúng tôi còn có chương trình giảm giá đặc biệt dành cho sinh viên, giúp bạn tiết kiệm hơn trong quá trình mua sắm.
+
+                <br>Hãy khám phá “Sách Mới” ngay hôm nay để tìm kiếm những cuốn sách yêu thích của bạn! Chúng tôi luôn sẵn lòng phục vụ bạn.
             </p>
             </div>
         </div>
