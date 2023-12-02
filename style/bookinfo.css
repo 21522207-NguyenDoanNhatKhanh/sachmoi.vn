@@ -429,6 +429,10 @@ ul.breadcrumb li a:hover {
     color: #fff;
 } 
 
+.information .container .down {
+    padding-top: 2rem;
+}
+
 .information .container .down h2 {
     font-size: 3rem;
     font-weight: bold;
