@@ -613,7 +613,6 @@ section {
 .about_website .wrapper .content {
     padding: 5rem;
     flex: 1 1 30rem;
-    /* border: var(--border); */
 }
 
 .about_website .wrapper .content h3 {
@@ -624,7 +623,7 @@ section {
 }
 
 .about_website .wrapper .content p{
-    color: var(--darkblue);
+    color: var(--black);
     font-size: 1.7rem;
     font-weight: bold;
     text-align: left;

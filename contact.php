@@ -86,7 +86,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['save_sub'])) {
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <!-- scripts -->
-        <script src="js/contact.js"></script>
         <script>
             function validateForm() {
                 var email = document.getElementsByName('email')[0].value;

@@ -16,36 +16,35 @@ $new_books = get_new_books(8);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sachmoi.vn</title>
-<link rel="stylesheet" href="style/homepage.css">
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachmoi.vn</title>
+  <link rel="stylesheet" href="style/homepage.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
+
 <body>
 
-<!-- home starts -->
-<section class="home" id="home">
-  <div class="site-wrapper">
-    <div class="row">
-      <div class="intro">
-        <h3>Sách mới - Mang tri thức đến mọi nơi</h3>
-        <p>
-          <a href="#home">Sachmoi.vn</a> là nhà sách trực tuyến đáng tin cậy, cung cấp hàng ngàn sách đa dạng về mọi lĩnh vực. Giao diện thân thiện, dễ sử dụng. Tìm kiếm và đặt hàng thuận tiện. Dịch vụ chuyên nghiệp, đóng gói cẩn thận, vận chuyển nhanh chóng. Chất lượng sách đa ngôn ngữ, xuất bản phẩm đa dạng. Tham gia <a href="#home">Sachmoi.vn</a> ngay để khám phá thế giới sách phong phú và thỏa mãn đam mê đọc sách.
-        </p>
-        <a href="bestselling.php" class="btn">Mua sắm ngay</a>
-      </div>
-      <div class="swiper catalogs">
-        <div class="swiper-wrapper">
-          <?php
+  <!-- home starts -->
+  <section class="home" id="home">
+    <div class="site-wrapper">
+      <div class="row">
+        <div class="intro">
+          <h3>Sách mới - Mang tri thức đến mọi nơi</h3>
+          <p>
+            <a href="#home">Sachmoi.vn</a> là nhà sách trực tuyến đáng tin cậy, cung cấp hàng ngàn sách đa dạng về mọi
+            lĩnh vực. Giao diện thân thiện, dễ sử dụng. Tìm kiếm và đặt hàng thuận tiện. Dịch vụ chuyên nghiệp, đóng gói
+            cẩn thận, vận chuyển nhanh chóng. Chất lượng sách đa ngôn ngữ, xuất bản phẩm đa dạng. Tham gia <a
+              href="#home">Sachmoi.vn</a> ngay để khám phá thế giới sách phong phú và thỏa mãn đam mê đọc sách.
+          </p>
+          <a href="bestselling.php" class="btn">Mua sắm ngay</a>
+        </div>
+        <div class="swiper catalogs">
+          <div class="swiper-wrapper">
+            <?php
 
             $genres = get_genres();
 
@@ -119,12 +118,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       <div class="swiper authors-slider">
         <div class="swiper-wrapper">
           <?php
-              $authors = get_authors();
+          $authors = get_authors();
 
-              // Hiển thị thông tin tác giả
-              if ($authors) {
-                foreach ($authors as $author) {
-                  echo "<div class='swiper-slide'>
+          // Hiển thị thông tin tác giả
+          if ($authors) {
+            foreach ($authors as $author) {
+              echo "<div class='swiper-slide'>
                     <div class='image'>
                       <a href='author.php?id={$author['id']}'><img src='images/authors/{$author['Image']}' alt='Annet Schaap'></a>            
                     </div>
@@ -197,10 +196,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         <div class="content">
           <h3>SÁCH MỚI - Mang tri thức đến mọi nơi</h3>
           <p>
-            Nhà sách SÁCH MỚI được thành lập năm 2023 bởi một nhóm sinh viên trẻ với khát khao mang tri thức đến với mọi
-            nơi trên khắp đất nước tươi đẹp hình chữ S này. Sứ mệnh của chúng tôi là cung cấp cho những con người ngoài
-            kia những trang sách lấp đầy kiến thức cũng như trải nghiệm tuyệt vời, với mong muốn tri thức sẽ vươn đến
-            mọi nơi.
+            "Sách mới" là một trang web bán sách được xây dựng bởi một nhóm sinh viên đam mê văn hóa đọc và công nghệ.
+            Với mục tiêu mang đến cho người đọc những tác phẩm mới và đa dạng, trang web cung cấp một bộ sưu tập sách
+            phong phú từ các thể loại văn học, kinh doanh, khoa học, tự nhiên và nhiều hơn nữa.
+            <br>
+            "Sách mới" tạo điểm nhấn bằng việc cung cấp thông tin chi tiết về mỗi cuốn sách, bao gồm tác giả, mô tả nội
+            dung và đánh giá từ cộng đồng đọc giả. Người dùng có thể dễ dàng tìm kiếm và lựa chọn sách theo danh mục, tác giả hoặc từ khóa.
+            <br>
+            Trang web cũng đảm bảo trải nghiệm mua sắm an toàn và thuận tiện bằng cách cung cấp tính năng giỏ hàng và
+            thanh toán trực tuyến. Giao diện trực quan và thân thiện giúp người dùng dễ dàng duyệt qua các danh sách
+            sách và tìm kiếm những tác phẩm mới nhất.
+            <br>
+            Với tâm huyết và sự đam mê về sách, nhóm sinh viên đã xây dựng "Sách mới" nhằm khơi dậy đam mê đọc sách và
+            cung cấp một nền tảng trực tuyến để mọi người có thể dễ dàng tiếp cận và mua sắm sách một cách tiện lợi và
+            thú vị.
           </p>
         </div>
         <div class="image">
