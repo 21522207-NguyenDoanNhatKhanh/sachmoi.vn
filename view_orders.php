@@ -15,7 +15,7 @@ include 'includes/header.php';
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="container">
         <?php
             if (isset($_SESSION['user_id'])) {
                 $user_id = $_SESSION['user_id'];
