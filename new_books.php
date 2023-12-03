@@ -75,7 +75,7 @@
                                 <div class="func">
                                     <a href="" class='btn add-to-cart' data-product-id='<?= $book['id'] ?>'><i class="fa-solid fa-cart-shopping"></i></a>
                                     <a href="" class='btn buy-now' data-product-id='<?= $book['id'] ?>'>Mua ngay</a>
-                                </div>
+                               </div>
                             </div>
                             <div class="name">
                                 <a href="book.php?id=<?= $book['id'] ?>">

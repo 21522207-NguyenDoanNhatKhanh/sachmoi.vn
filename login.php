@@ -79,9 +79,6 @@ ob_end_flush();
               </div>
               <div class="remember-forgot">
                 <label><input type="checkbox" />Ghi nhớ đăng nhập</label>
-                <a href="../ForgotPassword/forgot-password.html">
-                  Quên mật khẩu?
-                </a>
               </div>
               <button type="submit" class="btn">Đăng nhập</button>
               <div class="register-link">
