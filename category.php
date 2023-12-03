@@ -42,7 +42,7 @@
     <!-- breadscrumb -->
     <ul class="breadcrumb">
         <li><a href="index.php">Trang chủ</a></li>
-        <li><a href="category.php">Danh mục</a></li>
+        <li><a href="catalog.php">Danh mục</a></li>
         <li>
             <?= $category_name ?>
         </li>
@@ -131,7 +131,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- scripts -->
-    <script src="hotsales.js"></script>
+    <script src="js/hotsale.js"></script>
 </body>
 
 </html>

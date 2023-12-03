@@ -474,7 +474,7 @@ function save_subscriber($full_name, $phone_number, $birthday, $address, $email)
             VALUES ('$full_name', '$phone_number', '$birthday', '$address', '$email')";
 
     if ($conn->query($sql) === TRUE) {
-        // echo "Đăng ký thành công!";
+        echo "Đăng ký thành công!";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
