@@ -51,7 +51,7 @@
                                 <!-- <a href="book.php?id=<?= $book['id'] ?>"><img src="./book_image/<?= $book['image'] ?>" alt=""></a> -->
                                 <div class="func">
                                     <a href="" class='btn add-to-cart' data-product-id='<?=$book['id'] ?>'><i class="fa-solid fa-cart-shopping"></i></a>
-                                    <a href="" class="btn">Mua ngay</a>
+                                   <a href="" class='btn buy-now' data-product-id='<?= $book['id'] ?>'>Mua ngay</a>
                                 </div>
                             </div>
                             <div class="name">
