@@ -376,24 +376,24 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 /**/
-.container h2 {
+.wrapper h2 {
     font-size: 4rem;
     font-weight: bold;
     color: var(--darkblue);
     text-align: center;
     padding-top: 1rem;
 }
-.container{
+.wrapper{
     background-color: var(--lightblue);
     align-items: center;
 }
 
-.container .box{
+.wrapper .box{
     display: flex;
     justify-content: center;
 }
 
-.container ul{
+.wrapper ul{
     background-color: #fff;
     margin: 25px 0;
     padding: 25px;
@@ -401,7 +401,7 @@ ul.breadcrumb li a:hover {
     display: grid;
     align-items: center;
 }
-.container ul li{
+.wrapper ul li{
     /* margin: auto; */
     text-align: left;
     font-size: 1.7rem ;
