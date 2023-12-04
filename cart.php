@@ -1,12 +1,5 @@
-<?php
-session_start();
-include 'includes/header.php';
-include 'includes/db.php';
-?>
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8" />
@@ -18,6 +11,12 @@ include 'includes/db.php';
 </head>
 
 <body>
+  <?php
+  session_start();
+  include 'includes/header.php';
+  include 'includes/db.php';
+  ?>
+
 
   <!-- breadscrumb -->
   <ul class="breadcrumb">
@@ -76,7 +75,7 @@ include 'includes/db.php';
             ';
             } else {
               echo '<p style="font-size:2.2rem; padding:10px; font-weight:bold; color:var(--darkblue);"><i class="fa-solid fa-cart-shopping"></i>  Giỏ hàng của bạn đang trống.</p>';
-            }          
+            }
             ?>
           </tbody>
         </table>
@@ -92,6 +91,6 @@ include 'includes/db.php';
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <!-- scripts -->
   <script src="js/update_cart.js"></script>
-  </body>
+</body>
 
 </html>

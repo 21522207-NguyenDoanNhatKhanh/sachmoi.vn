@@ -1,33 +1,32 @@
-<?php
-session_start();
-include 'includes/header.php';
-include 'includes/db.php';
-
-// $page = isset($_GET['page']) ? $_GET['page'] : 1;
-// $rowsPerPage = isset($_SESSION['rows_per_page']) ? $_SESSION['rows_per_page'] : 12;
-
-$searchTerm = isset($_GET['search']) ? mysqli_real_escape_string($conn, $_GET['search']) : '';
-$searchTerm = trim($searchTerm);
-
-// $books = get_all_books($page, $rowsPerPage, $searchTerm);
-$new_books = get_new_books(8);
-// $popular_books = get_popular_books(5);
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="vi">
 
 <head>
+  <title>Sachmoi.vn </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sachmoi.vn</title>
   <link rel="stylesheet" href="style/homepage.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 
 <body>
+  <?php
+  session_start();
+  include 'includes/header.php';
+  include 'includes/db.php';
 
+  // $page = isset($_GET['page']) ? $_GET['page'] : 1;
+  // $rowsPerPage = isset($_SESSION['rows_per_page']) ? $_SESSION['rows_per_page'] : 12;
+  
+  $searchTerm = isset($_GET['search']) ? mysqli_real_escape_string($conn, $_GET['search']) : '';
+  $searchTerm = trim($searchTerm);
+
+  // $books = get_all_books($page, $rowsPerPage, $searchTerm);
+  $new_books = get_new_books(8);
+  // $popular_books = get_popular_books(5);
+  ?>
   <!-- home starts -->
   <section class="home" id="home">
     <div class="site-wrapper">
@@ -57,7 +56,7 @@ $new_books = get_new_books(8);
               <a href='genre5'>{$genre['name']}</a>
             </div>
             <div class='image'>
-              <a href='category.php?id={$genre['id']}'><img src='images/genres/{$genre['Image']}'></a>            
+              <a href='category.php?id={$genre['id']}'><img src='images/genres/{$genre['Image']}' alt=''></a>            
             </div>
           </div>";
               }
@@ -202,7 +201,8 @@ $new_books = get_new_books(8);
             <br>
             <br>
             "Sách mới" tạo điểm nhấn bằng việc cung cấp thông tin chi tiết về mỗi cuốn sách, bao gồm tác giả, mô tả nội
-            dung và đánh giá từ cộng đồng đọc giả. Người dùng có thể dễ dàng tìm kiếm và lựa chọn sách theo danh mục, tác giả hoặc từ khóa.
+            dung và đánh giá từ cộng đồng đọc giả. Người dùng có thể dễ dàng tìm kiếm và lựa chọn sách theo danh mục,
+            tác giả hoặc từ khóa.
             <br><br>
             Trang web cũng đảm bảo trải nghiệm mua sắm an toàn và thuận tiện bằng cách cung cấp tính năng giỏ hàng và
             thanh toán trực tuyến. Giao diện trực quan và thân thiện giúp người dùng dễ dàng duyệt qua các danh sách
@@ -254,15 +254,7 @@ $new_books = get_new_books(8);
 
   </section>
   <!-- cooperator ends -->
-
-
-
-
-
-
   <?php include 'includes/footer.php'; ?>
-
-
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- scripts -->

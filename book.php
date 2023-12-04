@@ -1,10 +1,6 @@
-<?php
-include 'includes/db.php';
-?>
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,25 +9,31 @@ include 'includes/db.php';
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
-<body></body>
 
-<?php include 'includes/header.php'; ?>
+<body>
+  <?php
+  include 'includes/db.php';
+  ?>
 
-<!-- breadscrumb -->
-<ul class="breadcrumb">
-  <li><a href="index.php">Trang chủ</a></li>
-  <li>Thông tin</li>
-</ul>
 
-<?php
-if (isset($_GET['id'])) {
-  $book_id = $_GET['id'];
 
-  $book = get_book_details($book_id);
-  increment_view_count($book_id);
+  <?php include 'includes/header.php'; ?>
 
-  if ($book) {
-    echo "
+  <!-- breadscrumb -->
+  <ul class="breadcrumb">
+    <li><a href="index.php">Trang chủ</a></li>
+    <li>Thông tin</li>
+  </ul>
+
+  <?php
+  if (isset($_GET['id'])) {
+    $book_id = $_GET['id'];
+
+    $book = get_book_details($book_id);
+    increment_view_count($book_id);
+
+    if ($book) {
+      echo "
         <!-- book info starts -->
         <section class='information'>
           <h3 class='heading'><span>Thông tin</span></h3>
@@ -78,24 +80,21 @@ if (isset($_GET['id'])) {
         </section>
         <!-- book info ends -->
         ";
+    } else {
+      echo "<p>Book not found.</p>";
+    }
   } else {
-    echo "<p>Book not found.</p>";
+    echo "<p>Invalid request. Please provide a book ID.</p>";
   }
-} else {
-  echo "<p>Invalid request. Please provide a book ID.</p>";
-}
 
-include 'includes/footer.php';
-?>
+  include 'includes/footer.php';
+  ?>
 
-
-
-
-<!-- ionic icon -->
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<!-- scripts -->
-<script src="bookinfo.js"></script>
+  <!-- ionic icon -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- scripts -->
+  <script src="bookinfo.js"></script>
 </body>
 
 </html>

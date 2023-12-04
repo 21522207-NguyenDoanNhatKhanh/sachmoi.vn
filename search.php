@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,8 @@
     echo '<ul class="breadcrumb">';
     echo '<li><a href="/HomePage/homepage.html">Trang chủ</a></li>';
     echo '<li>Tìm kiếm</li>';
-    echo '</ul>';    echo '';
+    echo '</ul>';
+    echo '';
 
     $search_query = isset($_GET['q']) ? $_GET['q'] : '';
     $search_query = htmlspecialchars($search_query); // Tránh tấn công XSS
@@ -28,7 +29,7 @@
     $books = search_books($search_query);
     ?>
     <!-- products starts -->
-    <section class="hotsales" id="hotsales">        
+    <section class="hotsales" id="hotsales">
         <div class="site-wrapper">
             <div class="container">
                 <!--  -->
@@ -50,8 +51,9 @@
                                     <img src="<?= $imageSrc ?>" alt=""></a>
                                 <!-- <a href="book.php?id=<?= $book['id'] ?>"><img src="./book_image/<?= $book['image'] ?>" alt=""></a> -->
                                 <div class="func">
-                                    <a href="" class='btn add-to-cart' data-product-id='<?=$book['id'] ?>'><i class="fa-solid fa-cart-shopping"></i></a>
-                                   <a href="" class='btn buy-now' data-product-id='<?= $book['id'] ?>'>Mua ngay</a>
+                                    <a href="" class='btn add-to-cart' data-product-id='<?= $book['id'] ?>'><i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="" class='btn buy-now' data-product-id='<?= $book['id'] ?>'>Mua ngay</a>
                                 </div>
                             </div>
                             <div class="name">

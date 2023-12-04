@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
+
 <body>
-    
+
     <?php
     session_start();
     include 'includes/header.php';
@@ -53,7 +55,7 @@
             <div class="container">
                 <!--  -->
                 <div class="row">
-                    <?php foreach ($books as $book) : ?>
+                    <?php foreach ($books as $book): ?>
                         <div class="book">
                             <div class="image">
                                 <?php
@@ -70,7 +72,8 @@
                                     <img src="<?= $imageSrc ?>" alt=""></a>
                                 <!-- <a href="book.php?id=<?= $book['id'] ?>"><img src="./book_image/<?= $book['image'] ?>" alt=""></a> -->
                                 <div class="func">
-                                    <a href="" class='btn add-to-cart' data-product-id='<?= $book['id'] ?>'><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="" class='btn add-to-cart' data-product-id='<?= $book['id'] ?>'><i
+                                            class="fa-solid fa-cart-shopping"></i></a>
                                     <a href="" class='btn buy-now' data-product-id='<?= $book['id'] ?>'>Mua ngay</a>
                                 </div>
                             </div>
@@ -106,14 +109,14 @@
                 « Trước
             </button>
         </a>
-        
+
         <p>
             <?php echo $listPage; ?>
         </p>
-        
-        <a 
+
+        <a
             href="<?php echo $page < $totalPage ? $_SERVER['PHP_SELF'] . '?page=' . ($page + 1) : 'javascript:void(0)'; ?>">
-            <button type="button" class="ml-3 btn" style="margin-left:3rem;"<?php echo $page == $totalPage ? 'disabled' : ''; ?>>
+            <button type="button" class="ml-3 btn" style="margin-left:3rem;" <?php echo $page == $totalPage ? 'disabled' : ''; ?>>
                 Sau »
             </button>
         </a>

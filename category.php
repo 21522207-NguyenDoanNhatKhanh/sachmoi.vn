@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
@@ -101,7 +101,7 @@
     </section>
     <!-- products - hotsales ends -->
     <div class="listpage">
-        
+
 
         <a href="<?php echo $page > 1 ? $_SERVER['PHP_SELF'] . '?id=' . $category_id . '&page=' . ($page - 1) : 'javascript:void(0)'; ?>"
             <?php echo $page == $totalPage ? 'role="link" aria-disabled="true"' : ''; ?>>
@@ -112,8 +112,7 @@
         <p>
             <?php echo $listPage; ?>
         </p>
-        <a
-            href="<?php echo $page < $totalPage ? $_SERVER['PHP_SELF'] . '?id=' . $category_id . '&page=' . ($page + 1) : 'javascript:void(0)'; ?>"
+        <a href="<?php echo $page < $totalPage ? $_SERVER['PHP_SELF'] . '?id=' . $category_id . '&page=' . ($page + 1) : 'javascript:void(0)'; ?>"
             <?php echo $page == $totalPage ? 'role="link" aria-disabled="true"' : ''; ?>>
             <button type="button" class="ml-3 btn" <?php echo $page == $totalPage ? 'disabled' : ''; ?>>
                 Sau »

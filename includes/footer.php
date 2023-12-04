@@ -12,8 +12,8 @@
         <h3>Đăng kí nhận những ưu đãi mới nhất</h3>
       </div>
       <div class="form">
-        <input type="email" placeholder="Nhập email của bạn" id="" class="box">
-        <a href="contact.php"><input type="submit" value="Đăng ký" class="btn"></a>
+        <input type="email" placeholder="Nhập email của bạn" class="box">
+        <a href="contact.php" >Đăng ký</a>
       </div>
     </div>
   </div>

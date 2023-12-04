@@ -1,7 +1,7 @@
 <!-- header starts -->
 <header class="header">
   <div class="header1">
-    <img src="images/logo.png" class="image">
+    <img src="images/logo.png" alt="website logo" class="image">
   </div>
   <!--  -->
   <div class="header2">
@@ -79,9 +79,7 @@
         <a href="contact.php" class="fa-solid fa-ticket"></a>
     </nav>
     <!-- to-the-top button -->
-    <button class="to-the-top">
-        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
-    </button>
+        <a class="to-the-top" href="#top"><i class="fa-solid fa-arrow-up"></i></a>
     <!--  -->
       <div class="right">
         <form action="search.php" class="search-form">

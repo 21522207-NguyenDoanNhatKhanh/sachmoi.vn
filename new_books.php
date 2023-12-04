@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
@@ -73,9 +73,10 @@
                                     <img src="<?= $imageSrc ?>" alt=""></a>
                                 <!-- <a href="book.php?id=<?= $book['id'] ?>"><img src="./book_image/<?= $book['image'] ?>" alt=""></a> -->
                                 <div class="func">
-                                    <a href="" class='btn add-to-cart' data-product-id='<?= $book['id'] ?>'><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="" class='btn add-to-cart' data-product-id='<?= $book['id'] ?>'><i
+                                            class="fa-solid fa-cart-shopping"></i></a>
                                     <a href="" class='btn buy-now' data-product-id='<?= $book['id'] ?>'>Mua ngay</a>
-                               </div>
+                                </div>
                             </div>
                             <div class="name">
                                 <a href="book.php?id=<?= $book['id'] ?>">
@@ -84,7 +85,7 @@
                                     </h3>
                                 </a>
                                 <div class="price">
-                                <?= number_format($book['price'], 0, ',', '.') . '₫' ?>
+                                    <?= number_format($book['price'], 0, ',', '.') . '₫' ?>
                                 </div>
                             </div>
                         </div>
@@ -101,10 +102,10 @@
 
 
 
-    
+
     <div class="listpage">
         <a href="<?php echo $page > 1 ? $_SERVER['PHP_SELF'] . '?page=' . ($page - 1) : 'javascript:void(0)'; ?>">
-            <button type="button" class="btn" style="margin-right:3rem;"<?php echo $page == 1 ? 'disabled' : ''; ?>>
+            <button type="button" class="btn" style="margin-right:3rem;" <?php echo $page == 1 ? 'disabled' : ''; ?>>
                 « Trước
             </button>
         </a>
@@ -113,7 +114,7 @@
         </p>
         <a
             href="<?php echo $page < $totalPage ? $_SERVER['PHP_SELF'] . '?page=' . ($page + 1) : 'javascript:void(0)'; ?>">
-            <button type="button" class="btn" style="margin-left:3rem;"<?php echo $page == $totalPage ? 'disabled' : ''; ?>>
+            <button type="button" class="btn" style="margin-left:3rem;" <?php echo $page == $totalPage ? 'disabled' : ''; ?>>
                 Sau »
             </button>
         </a>
@@ -126,5 +127,5 @@
     <!-- scripts -->
     <script src="js/homepage.js"></script>
 </body>
-</html>
 
+</html>

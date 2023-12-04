@@ -19,7 +19,6 @@
     border: none;
     text-decoration: none;
     transition: all 0.1s linear;
-    transition: width none;
 }
 
 html{
@@ -318,6 +317,7 @@ section {
 }
 
 .to-the-top {
+    padding: 2rem;
     position: fixed;
     display: block;
     right: 7rem;
@@ -339,7 +339,7 @@ section {
     padding: 1.5rem;
 }
 
-.to-the-top a:hover i{
+.to-the-top a:hover{
     color: #fff;
     background-color: var(--darkblue);
 }
@@ -549,6 +549,16 @@ ul.breadcrumb li a:hover {
     padding: 1rem;
     border: 0.1rem solid rgba(0, 0, 0, .5);
     border-radius: 2px;
+}
+
+.form a{
+    padding: 1.5rem 3rem;
+    margin-left: 1rem;
+    color: #fff;
+    background: var(--darkblue);
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .footer .container {
