@@ -42,7 +42,7 @@
     <!-- breadscrumb -->
     <ul class="breadcrumb">
         <li><a href="index.php">Trang chủ</a></li>
-        <li><a href="category.php">Danh mục</a></li>
+        <li><a href="catalog.php">Danh mục</a></li>
         <li>
             <?= $category_name ?>
         </li>
