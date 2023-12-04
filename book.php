@@ -51,7 +51,7 @@ if (isset($_GET['id'])) {
                   </div>
                   <div class='price'><span>{$book['price']}&#x20AB;</span></div>
                   <div class='func'>
-                  <a class='btn buy-now' href='javascript:void(0);'  data-product-id='{$book['id']}'><i class='fas fa-shopping-cart add-to-cart'></i></a>
+                  <a class='btn add-to-cart' href='javascript:void(0);'  data-product-id='{$book['id']}'><i class='fas fa-shopping-cart add-to-cart'></i></a>
                     <a href='' class='btn buy-now' data-product-id='{$book['id']}'>Mua ngay</a>
                   </div>
                 </div>
