@@ -52,11 +52,15 @@ if (isset($_GET['id'])) {
     if ($partner) {
        
         echo "
-
+        <!-- breadscrumb -->
+        <ul class='breadcrumb'>
+          <li><a href='index.php'>Trang chủ</a></li>
+          <li>{$partner['name']}</li>
+        </ul>
     <!-- partners starts -->
       <section class='partners'>
         <div class='site-wrapper'>
-          <img src='images/partners/{$partner['Image']}' />
+          <img src='images/partners/{$partner['Image']}' width='20%' />
         <div class='text'>
           <h2>{$partner['name']}</h2>
           <a href='{$partner['link']}'>{$partner['link']}</a>

@@ -200,13 +200,14 @@ $new_books = get_new_books(8);
             Với mục tiêu mang đến cho người đọc những tác phẩm mới và đa dạng, trang web cung cấp một bộ sưu tập sách
             phong phú từ các thể loại văn học, kinh doanh, khoa học, tự nhiên và nhiều hơn nữa.
             <br>
+            <br>
             "Sách mới" tạo điểm nhấn bằng việc cung cấp thông tin chi tiết về mỗi cuốn sách, bao gồm tác giả, mô tả nội
             dung và đánh giá từ cộng đồng đọc giả. Người dùng có thể dễ dàng tìm kiếm và lựa chọn sách theo danh mục, tác giả hoặc từ khóa.
-            <br>
+            <br><br>
             Trang web cũng đảm bảo trải nghiệm mua sắm an toàn và thuận tiện bằng cách cung cấp tính năng giỏ hàng và
             thanh toán trực tuyến. Giao diện trực quan và thân thiện giúp người dùng dễ dàng duyệt qua các danh sách
             sách và tìm kiếm những tác phẩm mới nhất.
-            <br>
+            <br><br>
             Với tâm huyết và sự đam mê về sách, nhóm sinh viên đã xây dựng "Sách mới" nhằm khơi dậy đam mê đọc sách và
             cung cấp một nền tảng trực tuyến để mọi người có thể dễ dàng tiếp cận và mua sắm sách một cách tiện lợi và
             thú vị.
