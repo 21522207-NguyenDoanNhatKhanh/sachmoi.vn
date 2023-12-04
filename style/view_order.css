@@ -376,24 +376,24 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 /**/
-.container-view h2 {
+.container_view h2 {
     font-size: 4rem;
     font-weight: bold;
     color: var(--darkblue);
     text-align: center;
     padding-top: 1rem;
 }
-.container-view{
+.container_view{
     background-color: var(--lightblue);
     align-items: center;
 }
 
-.container-view .box{
+.container_view .box{
     display: flex;
     justify-content: center;
 }
 
-.container-view ul{
+.container_view ul{
     background-color: #fff;
     margin: 25px 0;
     padding: 25px;
@@ -401,7 +401,7 @@ ul.breadcrumb li a:hover {
     display: grid;
     align-items: center;
 }
-.container-view ul li{
+.container_view ul li{
     /* margin: auto; */
     text-align: left;
     font-size: 1.7rem ;
