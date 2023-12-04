@@ -384,7 +384,7 @@ ul.breadcrumb li a:hover {
 .hotsales .row {
     display: grid !important;
     grid-template-columns: 23% 23% 23% 23%;
-    column-gap: auto;
+    /* column-gap: auto; */
     align-items: center;
     justify-content: space-around;
     padding-bottom: 2rem;
