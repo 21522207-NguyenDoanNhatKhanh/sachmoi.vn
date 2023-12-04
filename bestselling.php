@@ -42,8 +42,8 @@
 
     <!-- breadscrumb -->
     <ul class="breadcrumb">
-        <li><a href="/HomePage/homepage.html">Trang chủ</a></li>
-        <li><a href="/Catalog/catalog.html">Danh mục</a></li>
+        <li><a href="index.php">Trang chủ</a></li>
+        <li><a href="catalog.php">Danh mục</a></li>
         <li>Sách bán chạy</li>
     </ul>
     <!-- products - hotsales starts -->
