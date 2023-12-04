@@ -33,10 +33,10 @@ include 'includes/db.php';
       <a href="/Contact/contact.html" class="fa-solid fa-ticket"></a>
     </nav>
     <!-- breadscrumb -->
-    <ul class="breadcrumb">
+    <!-- <ul class="breadcrumb">
       <li><a href="/HomePage/homepage.html">Trang chủ</a></li>
       <li>Annet Schapp</li>
-    </ul>
+    </ul> -->
     <!-- to-the-top button -->
     <button class="to-the-top">
       <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
