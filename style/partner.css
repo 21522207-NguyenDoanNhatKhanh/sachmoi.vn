@@ -373,99 +373,44 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
-.information .container .up,
-.information .container .down {
+.partners {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #fff;
 }
 
-.information .container .up .image {
-    border: var(--border);
+.partners .site-wrapper {
+    width: 70%;
 }
 
-.information .container .up .image img {
+.partners img {
+    width: 25rem;
+    height: 25rem;
     float: left;
-    max-width: 25rem;
-    padding: 1.5rem;
+    border: 0.15rem solid var(--darkblue);
+    border-radius: 0.25rem;
+    margin-right: 2rem;
+    border-radius: 50%;
 }
 
-.information .container .up .info {
-    text-align: left;
-    margin-left: 5rem;
-}
-
-.information .container .up .info h1 {
+.partners .text {
     color: var(--darkblue);
     font-weight: bold;
-    font-size: 4rem;
 }
 
-.information .container .up .info .price {
+.partners .text h2 {
+    font-size: 3rem;
+}
+
+.partners .text a {
     color: var(--blue);
     font-size: 1.7rem;
-    font-weight: bold;
-    padding: 2rem 0;
-    border-bottom: var(--border);
 }
 
-.information .container .up .info .func {
-    margin-top: 2.5rem;
+.partners .text a:hover {
+    text-decoration: underline;
 }
-
-.information .container .up .info .func a {
-    font-size: 1.7rem;
-    color: var(--darkblue);
-    padding: 1rem 2rem;
-}
-
-.information .container .up .info .func .btn {
-    border: 0.2rem solid var(--darkblue);
-    background-color: #fff;
-}
-
-.information .container .up .info .func a:hover {
-    background: var(--darkblue);
-    color: #fff;
-} 
-
-.information .container .down {
-    padding-top: 2rem;
-}
-
-.information .container .down h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--black);
-}
-
-.information .container .down .detail1 {
-    margin-right: 5rem;
-}
-
-.information .container .down .detail1 p{
-    max-width: 100rem;
-    font-size: 2rem;
-    color: var(--black);
-}
-
-.information .container .down .detail2 {
-    border: var(--border);
-    padding: 0 3rem;
-}
-
-.information .container .down .detail2 h2 {
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.information .container .down .detail2 ul li {
-    font-size: 2rem;
-    color: var(--darkblue);
-    line-height: 1;
-    padding: 1.5rem;
-}
-
 /*  */
 
 .footer {
@@ -606,24 +551,37 @@ ul.breadcrumb li a:hover {
     section {
         padding: 1rem;
     }
-
-    .header .header2 .left .logo {
-        font-size: 2rem;
-    }
-
-    .information .container .up .info .func a {
-        padding: 0.5rem 1rem;
-    }
 }
 
 @media (max-width: 616px) {
-    .site-wrapper {
-        margin: 0 1rem;
+    html {
+        font-size: 35%;
     }
 
-    .information .container .up .info .func a {
-        font-size: 1.7rem;
-        padding: 0.25rem 0.5rem;
+    section {
+        padding: 0.5rem;
+    }
+
+    .site-wrapper {
+        margin: 1rem 0;
+    }
+
+    .partners .site-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+
+    }
+    .partners img {
+        align-items: center;
+    }
+
+    .partners .text {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .footer .media {
@@ -639,4 +597,18 @@ ul.breadcrumb li a:hover {
     .footer .media .newsletter input{
         height: 4rem;
     }
+}
+
+@media (max-width: 280px) {
+    html {
+        font-size: 30%;
+    }
+
+    .header .header1 .image {
+        width: 50rem;
+    }
+
+    .header .header2 .left a {
+        font-size: 2rem;
+    } 
 }

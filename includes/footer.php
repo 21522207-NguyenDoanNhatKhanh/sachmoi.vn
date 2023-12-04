@@ -32,8 +32,8 @@
         <a href="index.php"><i class="fas fa-arrow-right"></i>Trang chủ</a>
         <a href="catalog.php"><i class="fas fa-arrow-right"></i>Danh mục</a>
         <a href="bestselling.php"><i class="fas fa-arrow-right"></i>Bán chạy</a>
-        <a href="aboutus"><i class="fas fa-arrow-right"></i>Về chúng tôi</a>
-        <a href="/Contact/contact.html"><i class="fas fa-arrow-right"></i>Ưu đãi</a>
+        <a href="aboutus.php"><i class="fas fa-arrow-right"></i>Về chúng tôi</a>
+        <a href="contact.php"><i class="fas fa-arrow-right"></i>Ưu đãi</a>
       </div>
 
       <div class="box">

@@ -33,10 +33,10 @@ include 'includes/db.php';
       <a href="/Contact/contact.html" class="fa-solid fa-ticket"></a>
     </nav>
     <!-- breadscrumb -->
-    <ul class="breadcrumb">
+    <!-- <ul class="breadcrumb">
       <li><a href="/HomePage/homepage.html">Trang chủ</a></li>
       <li>Annet Schapp</li>
-    </ul>
+    </ul> -->
     <!-- to-the-top button -->
     <button class="to-the-top">
       <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
@@ -52,11 +52,15 @@ if (isset($_GET['id'])) {
     if ($partner) {
        
         echo "
-
+        <!-- breadscrumb -->
+        <ul class='breadcrumb'>
+          <li><a href='index.php'>Trang chủ</a></li>
+          <li>{$partner['name']}</li>
+        </ul>
     <!-- partners starts -->
       <section class='partners'>
         <div class='site-wrapper'>
-          <img src='images/partners/{$partner['Image']}' />
+          <img src='images/partners/{$partner['Image']}' width='20%' />
         <div class='text'>
           <h2>{$partner['name']}</h2>
           <a href='{$partner['link']}'>{$partner['link']}</a>

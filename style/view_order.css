@@ -376,24 +376,28 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 /**/
-.container h2 {
+.container_view h2 {
     font-size: 4rem;
     font-weight: bold;
     color: var(--darkblue);
     text-align: center;
     padding-top: 1rem;
 }
-.container{
+.container_view{
     background-color: var(--lightblue);
     align-items: center;
 }
 
-.container .box{
+.container_view .box{
     display: flex;
     justify-content: center;
 }
 
-.container ul{
+.container_view h2{
+    padding: 2rem;
+}
+
+.container_view ul{
     background-color: #fff;
     margin: 25px 0;
     padding: 25px;
@@ -401,7 +405,7 @@ ul.breadcrumb li a:hover {
     display: grid;
     align-items: center;
 }
-.container ul li{
+.container_view ul li{
     /* margin: auto; */
     text-align: left;
     font-size: 1.7rem ;
@@ -409,6 +413,14 @@ ul.breadcrumb li a:hover {
     font-weight: bold;
     padding: 1rem;
 }
+
+.container_view .box p{
+    font-size: 2rem ;
+    color: var(--darkblue);
+    font-weight: bold;
+    padding: 1rem;
+}
+
 /**/
 .footer {
     padding: 0;
