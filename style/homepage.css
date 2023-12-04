@@ -389,7 +389,6 @@ section {
     text-align: center;
     margin-top: 2rem;
     overflow: hidden;
-    width: 20rem;
 }
 
 .home .row .catalogs a img {
@@ -403,6 +402,7 @@ section {
 
 .home .row .catalogs .genres {
     background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
+    width: 20rem;
 }
 
 .home .row .catalogs .genres .content {
