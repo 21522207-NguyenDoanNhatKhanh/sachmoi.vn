@@ -3,7 +3,7 @@
 
 ## Clone code
 
-Để clone code về từ git repo, sử dụng lệnh command:
+Để clone code về từ git repo, sử dụng lệnh:
 
 ```shell
 git clone https://github.com/21522207-NguyenDoanNhatKhanh/sachmoi.vn.git
