@@ -122,10 +122,6 @@
         </a>
     </div>
 
-
-
-
-
     <?php include 'includes/footer.php'; ?>
     <!-- ionic icon -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

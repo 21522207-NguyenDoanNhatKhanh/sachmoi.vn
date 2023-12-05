@@ -33,7 +33,7 @@
     <!-- authors starts -->
       <section class='authors'>
         <div class='site-wrapper'>
-          <img src='images/authors/{$author['Image']}' />
+          <img src='images/authors/{$author['Image']}' alt=''/>
         <div class='text'>
           <h2>{$author['name']}</h2>
           <p>{$author['description']}</p>

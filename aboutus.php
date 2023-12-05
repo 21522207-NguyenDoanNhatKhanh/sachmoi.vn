@@ -17,7 +17,7 @@
     <!-- about us starts -->
     <section class="aboutus" id="aboutus">
         <div class="site-wrapper">
-            <img src="images/aboutus/aboutus.jpg" />
+            <img src="images/aboutus/aboutus.jpg" alt=""/>
             <div class="text">
                 <h2>
                     Về chúng tôi, nhà sách trực tuyến

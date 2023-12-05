@@ -105,8 +105,6 @@
         <h3>Hỗ trợ 24/7</h3>
         <p>Nhân viên luôn có mặt hỗ trợ bạn!</p>
       </div>
-
-    </div>
     </div>
   </section>
   <!-- service ends -->
