@@ -13,11 +13,19 @@ git clone https://github.com/21522207-NguyenDoanNhatKhanh/sachmoi.vn.git
 Sau khi clone code về thành công, cài một phần mềm cho phép giả lập môi trường server hosting như XAMMP, Laragon
 
 Trong localhost ` http://localhost:88/phpmyadmin/ ` hoặc `http://localhost/phpmyadmin/`,
-tạo một database tên `sachmoi_db` và chuẩn `utf8mb3_unicode_ci`
-![image](https://github.com/21522207-NguyenDoanNhatKhanh/sachmoi.vn/assets/129664500/1dc8fbc9-2e5e-49a7-98f7-95bf39936cd1)
+tạo một database tên `sachmoi_db` và chuẩn `utf8mb4_unicode_ci`
+![image](https://github.com/21522207-NguyenDoanNhatKhanh/sachmoi.vn/assets/147527094/a11a40b3-3a86-4ab3-a3ec-19ed7bf408d3)
+
+Vào phần import trong 'sachmoi_db'. Kết quả được như hình
+![image](https://github.com/21522207-NguyenDoanNhatKhanh/sachmoi.vn/assets/147527094/42a69d74-870a-4241-884e-e1b140f2177f)
+
 
 Thêm file `sachmoi_db.sql` đã clone về vào database
-![image](https://github.com/21522207-NguyenDoanNhatKhanh/sachmoi.vn/assets/129664500/ec8500d2-2b15-4eb6-93bc-3e0578c05ab6)
+![image](https://github.com/21522207-NguyenDoanNhatKhanh/sachmoi.vn/assets/147527094/7b7afb6b-e794-4a2b-bed8-4d6000dcd984)
+
+Kéo xuống cuối trang và chọn Import. Kết quả sẽ được như hình
+![image](https://github.com/21522207-NguyenDoanNhatKhanh/sachmoi.vn/assets/147527094/0150bcb8-f46e-46f8-bc68-da284de06bdf)
+
 
 Chạy trang web bằng đường dẫn ` http://localhost:88/sachmoi.vn/ ` hoặc `http://localhost/sachmoi.vn/`
 
