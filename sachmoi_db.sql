@@ -68,17 +68,7 @@ CREATE TABLE `order` (
   `total_products` int DEFAULT '3'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `order`
---
 
-INSERT INTO `order` (`order_id`, `user_id`, `order_date`, `total_amount`, `shipping_status`, `payment_status`, `name`, `number`, `address`, `total_products`) VALUES
-(9, 4, '2023-11-26 09:07:43', 180000, 'shipped', 'pending', 'nama', '055', 'kk', 3),
-(11, 4, '2023-11-26 09:19:32', 135150, 'Pending', 'completed', 'g', 'g', 'g', 3),
-(12, 4, '2023-11-26 13:29:43', 380000, 'shipped', 'completed', 'TuanVo', '23424', 'newthenameuser', 2),
-(14, 4, '2023-11-26 14:55:18', 526000, 'shipped', 'completed', 'q', 'q', 'q', 3);
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `order_detail`
@@ -92,34 +82,7 @@ CREATE TABLE `order_detail` (
   `order_amount` double DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `order_detail`
---
 
-INSERT INTO `order_detail` (`order_detail_id`, `order_id`, `product_id`, `quantity`, `order_amount`) VALUES
-(1, 3, 408, 1, 45000),
-(2, 3, 413, 1, 45000),
-(3, 3, 412, 1, 90000),
-(4, 5, 413, 1, 45000),
-(5, 5, 408, 1, 45000),
-(6, 5, 412, 1, 90000),
-(7, 7, 413, 1, 45000),
-(8, 7, 408, 1, 45000),
-(9, 7, 412, 1, 90000),
-(10, 8, 413, 1, 45000),
-(11, 8, 408, 1, 45000),
-(12, 8, 129, 1, 150),
-(13, 9, 413, 1, 45000),
-(14, 9, 408, 1, 45000),
-(15, 9, 412, 1, 90000),
-(18, 11, 413, 1, 45000),
-(19, 11, 412, 1, 90000),
-(20, 11, 129, 1, 150),
-(21, 12, 527, 2, 380000),
-(24, 14, 527, 1, 190000),
-(25, 14, 528, 2, 336000);
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `partner`
@@ -163,6 +126,205 @@ CREATE TABLE `product` (
   `view_count` int DEFAULT '0',
   `stock_quantity` int DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+--
+-- Table structure for table `product_category`
+--
+
+CREATE TABLE `product_category` (
+  `id` int NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `Image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int NOT NULL,
+  `username` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_type` enum('admin','customer') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `email`, `password`, `user_type`) VALUES
+(1, '1', '1@1', '$2y$10$skbZpVqknS815ybGmcoXFuBVy6KuyTnAt2ETBwk6IGmBRb0fzhNmq', 'customer'),
+(3, '2@2', '2@2', '$2y$10$4oZCCR0BIFL4ZLmvTgXOgeb84OhaBUrhaqz1iXz8cD/rmV1fMyssK', 'customer'),
+(4, 'newthenameuser@gmail.com', 'newthenameuser@gmail.com', '$2y$10$g2byfsM.DYLXHcX.jX/f6.Moq2qqqethiqhGV33wLqzYHJ1Oi/usy', 'admin'),
+(5, 'newthena', 'newthenameuser@gmail.com1', '$2y$10$weXb5G2ANoEP57AbvNnJie10DedKQe5vreYOqeIjdY9Oe3lT8joBa', 'customer'),
+(6, 'newthenameuser@gmail.com2', 'newthenameuser@gmail.com2', '$2y$10$eFybX4iccP/oBVLsa096H.nViNdauoSgLsuJ.hZs2.Exf7SLETuN.', 'customer');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `author`
+--
+ALTER TABLE `author`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `order`
+--
+ALTER TABLE `order`
+  ADD PRIMARY KEY (`order_id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `order_detail`
+--
+ALTER TABLE `order_detail`
+  ADD PRIMARY KEY (`order_detail_id`),
+  ADD KEY `order_id` (`order_id`),
+  ADD KEY `product_id` (`product_id`);
+
+--
+-- Indexes for table `partner`
+--
+ALTER TABLE `partner`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `category_id` (`category_id`);
+
+--
+-- Indexes for table `product_category`
+--
+ALTER TABLE `product_category`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `author`
+--
+ALTER TABLE `author`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `order`
+--
+ALTER TABLE `order`
+  MODIFY `order_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `order_detail`
+--
+ALTER TABLE `order_detail`
+  MODIFY `order_detail_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
+--
+-- AUTO_INCREMENT for table `partner`
+--
+ALTER TABLE `partner`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=574;
+
+--
+-- AUTO_INCREMENT for table `product_category`
+--
+ALTER TABLE `product_category`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `order`
+--
+ALTER TABLE `order`
+  ADD CONSTRAINT `order_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
+COMMIT;
+-- SET foreign_key_checks = 0;
+ALTER TABLE `order_detail`
+ADD CONSTRAINT `fk_order_detail_order`
+FOREIGN KEY (`order_id`) REFERENCES `order` (`order_id`);
+ALTER TABLE `order_detail`
+ADD CONSTRAINT `fk_order_detail_product`
+FOREIGN KEY (`product_id`) REFERENCES `product` (`id`);
+ALTER TABLE `product`
+ADD CONSTRAINT `fk_product_category`
+FOREIGN KEY (`category_id`) REFERENCES `product_category` (`id`);
+-- SET foreign_key_checks = 1;
+
+CREATE TABLE subcriber (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(255) NOT NULL,
+    phone_number VARCHAR(15) NOT NULL,
+    birthday DATE,
+    address VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL
+);
+
+
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+--
+-- Dumping data for table `product_category`
+--
+
+INSERT INTO `product_category` (`id`, `name`, `description`, `Image`) VALUES
+(1, 'Nước ngoài', 'Mô tả cho danh mục 1', 'vhnn.jpg'),
+(2, 'Tham khảo', 'Mt', 'tk.jpg'),
+(3, 'Thiếu nhi', '[value-3]', 'tt.jpg'),
+(4, 'Việt Nam', '[value-3]', 'vhvn.jpg'),
+(5, 'Tiểu thuyết', '[value-3]', 'tieuthuyet.jpg'),
+(6, 'Truyện ngắn', '[value-3]', 'truyenngan.jpg'),
+(7, 'Thơ', '[value-3]', 'tho.jpg'),
+(8, 'Đương đại', '[value-3]', 'duongdai.jpg'),
+(9, 'Lãng mạn', '[value-3]', 'langman.jpg'),
+(10, 'Trinh thám / Kinh dị', '[value-3]', 'trinhtham.jpg'),
+(11, 'Light novel', '[value-3]', 'ln.jpg'),
+(12, 'Khoa học', '[value-3]', 'khoahoc.jpg'),
+(13, 'Tiếng Anh', '[value-3]', 'ta.jpg'),
+(14, 'Tiếng Nhật', '[value-3]', 'tn.jpg'),
+(15, 'Tiếng Trung', '[value-3]', 'ttrung.jpg'),
+(16, 'Tiếng Pháp', '[value-3]', 'tp.jpg'),
+(17, 'Sách ảnh', '[value-3]', 'sachanh.jpg'),
+(18, 'Sách nói', '[value-3]', 'sachnoi.jpg'),
+(19, 'Sách tô màu', '[value-3]', 'tomau.jpg');
+-- --------------------------------------------------------
+
+
 
 --
 -- Dumping data for table `product`
@@ -534,174 +696,30 @@ INSERT INTO `product` (`id`, `image`, `name`, `author`, `publisher`, `release_da
 (669, 'lcncnt-t2.jpg', 'Lời của Nietzsche cho người trẻ - Tập 2', 'Shiratori Haruhiko', 'Thế Giới', '2023-09-08', '14.5x20.5 cm', 276, '\"Trong làng triết học phương Tây, Nietzsche có lẽ là một trường hợp hiếm hoi không khiến cho người ta phải sợ hãi [vì trừu tượng] hay ngao ngán [vì kinh viện]. Cũng vậy ở Việt Nam, kể từ khi các tác phẩm của Nietzsche lần đầu xuất hiện, biết bao nhiêu thế hệ trẻ đã đọc và yêu mến ông, mang theo tư tưởng mãnh liệt và hân hoan của ông trong hành trang của đời mình, cùng với những tình yêu, hoài bão và đổ vỡ.\"', 10800, 19, 0, 500);
 
 -- --------------------------------------------------------
-
 --
--- Table structure for table `product_category`
---
-
-CREATE TABLE `product_category` (
-  `id` int NOT NULL,
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-  `Image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `product_category`
+-- Dumping data for table `order`
 --
 
-INSERT INTO `product_category` (`id`, `name`, `description`, `Image`) VALUES
-(1, 'Nước ngoài', 'Mô tả cho danh mục 1', 'vhnn.jpg'),
-(2, 'Tham khảo', 'Mt', 'tk.jpg'),
-(3, 'Thiếu nhi', '[value-3]', 'tt.jpg'),
-(4, 'Việt Nam', '[value-3]', 'vhvn.jpg'),
-(5, 'Tiểu thuyết', '[value-3]', 'tieuthuyet.jpg'),
-(6, 'Truyện ngắn', '[value-3]', 'truyenngan.jpg'),
-(7, 'Thơ', '[value-3]', 'tho.jpg'),
-(8, 'Đương đại', '[value-3]', 'duongdai.jpg'),
-(9, 'Lãng mạn', '[value-3]', 'langman.jpg'),
-(10, 'Trinh thám / Kinh dị', '[value-3]', 'trinhtham.jpg'),
-(11, 'Light novel', '[value-3]', 'ln.jpg'),
-(12, 'Khoa học', '[value-3]', 'khoahoc.jpg'),
-(13, 'Tiếng Anh', '[value-3]', 'ta.jpg'),
-(14, 'Tiếng Nhật', '[value-3]', 'tn.jpg'),
-(15, 'Tiếng Trung', '[value-3]', 'ttrung.jpg'),
-(16, 'Tiếng Pháp', '[value-3]', 'tp.jpg'),
-(17, 'Sách ảnh', '[value-3]', 'sachanh.jpg'),
-(18, 'Sách nói', '[value-3]', 'sachnoi.jpg'),
-(19, 'Sách tô màu', '[value-3]', 'tomau.jpg');
+INSERT INTO `order` (`order_id`, `user_id`, `order_date`, `total_amount`, `shipping_status`, `payment_status`, `name`, `number`, `address`, `total_products`) VALUES
+(9, 4, '2023-11-26 09:07:43', 180000, 'shipped', 'pending', 'nama', '055', 'kk', 3),
+(11, 4, '2023-11-26 09:19:32', 135150, 'Pending', 'completed', 'g', 'g', 'g', 3),
+(12, 4, '2023-11-26 13:29:43', 380000, 'shipped', 'completed', 'TuanVo', '23424', 'newthenameuser', 2),
+(14, 4, '2023-11-26 14:55:18', 526000, 'shipped', 'completed', 'q', 'q', 'q', 3);
+
 -- --------------------------------------------------------
-
 --
--- Table structure for table `user`
---
-
-CREATE TABLE `user` (
-  `id` int NOT NULL,
-  `username` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `user_type` enum('admin','customer') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `user`
+-- Dumping data for table `order_detail`
 --
 
-INSERT INTO `user` (`id`, `username`, `email`, `password`, `user_type`) VALUES
-(1, '1', '1@1', '$2y$10$skbZpVqknS815ybGmcoXFuBVy6KuyTnAt2ETBwk6IGmBRb0fzhNmq', 'customer'),
-(3, '2@2', '2@2', '$2y$10$4oZCCR0BIFL4ZLmvTgXOgeb84OhaBUrhaqz1iXz8cD/rmV1fMyssK', 'customer'),
-(4, 'newthenameuser@gmail.com', 'newthenameuser@gmail.com', '$2y$10$g2byfsM.DYLXHcX.jX/f6.Moq2qqqethiqhGV33wLqzYHJ1Oi/usy', 'admin'),
-(5, 'newthena', 'newthenameuser@gmail.com1', '$2y$10$weXb5G2ANoEP57AbvNnJie10DedKQe5vreYOqeIjdY9Oe3lT8joBa', 'customer'),
-(6, 'newthenameuser@gmail.com2', 'newthenameuser@gmail.com2', '$2y$10$eFybX4iccP/oBVLsa096H.nViNdauoSgLsuJ.hZs2.Exf7SLETuN.', 'customer');
+INSERT INTO `order_detail` (`order_detail_id`, `order_id`, `product_id`, `quantity`, `order_amount`) VALUES
+(13, 9, 413, 1, 45000),
+(14, 9, 408, 1, 45000),
+(15, 9, 412, 1, 90000),
+(18, 11, 413, 1, 45000),
+(19, 11, 412, 1, 90000),
+(20, 11, 129, 1, 150),
+(21, 12, 527, 2, 380000),
+(24, 14, 527, 1, 190000),
+(25, 14, 528, 2, 336000);
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `author`
---
-ALTER TABLE `author`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `order`
---
-ALTER TABLE `order`
-  ADD PRIMARY KEY (`order_id`),
-  ADD KEY `user_id` (`user_id`);
-
---
--- Indexes for table `order_detail`
---
-ALTER TABLE `order_detail`
-  ADD PRIMARY KEY (`order_detail_id`),
-  ADD KEY `order_id` (`order_id`),
-  ADD KEY `product_id` (`product_id`);
-
---
--- Indexes for table `partner`
---
-ALTER TABLE `partner`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `product`
---
-ALTER TABLE `product`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `category_id` (`category_id`);
-
---
--- Indexes for table `product_category`
---
-ALTER TABLE `product_category`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `author`
---
-ALTER TABLE `author`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- AUTO_INCREMENT for table `order`
---
-ALTER TABLE `order`
-  MODIFY `order_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- AUTO_INCREMENT for table `order_detail`
---
-ALTER TABLE `order_detail`
-  MODIFY `order_detail_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
-
---
--- AUTO_INCREMENT for table `partner`
---
-ALTER TABLE `partner`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `product`
---
-ALTER TABLE `product`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=574;
-
---
--- AUTO_INCREMENT for table `product_category`
---
-ALTER TABLE `product_category`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `order`
---
-ALTER TABLE `order`
-  ADD CONSTRAINT `order_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+-- --------------------------------------------------------
